@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkingHome.Weather.Api", "ThinkingHome.Weather.Api\ThinkingHome.Weather.Api.csproj", "{EB40954F-0C96-4C5E-A804-82325A85F7A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkingHome.Weather.TestConsole", "ThinkingHome.Weather.TestConsole\ThinkingHome.Weather.TestConsole.csproj", "{C7C60E7A-6071-49E4-9363-3616375AE203}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB40954F-0C96-4C5E-A804-82325A85F7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB40954F-0C96-4C5E-A804-82325A85F7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB40954F-0C96-4C5E-A804-82325A85F7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB40954F-0C96-4C5E-A804-82325A85F7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7C60E7A-6071-49E4-9363-3616375AE203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C60E7A-6071-49E4-9363-3616375AE203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C60E7A-6071-49E4-9363-3616375AE203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C60E7A-6071-49E4-9363-3616375AE203}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
