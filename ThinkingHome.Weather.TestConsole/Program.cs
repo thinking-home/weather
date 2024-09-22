@@ -6,7 +6,8 @@ namespace ThinkingHome.Weather.TestConsole
     {
         static void Main(string[] args)
         {
-            Class1.SayMoo();
+            YandexWeatherClient client = new YandexWeatherClient();
+            client.SayMoo();
         }
     }
 }

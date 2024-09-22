@@ -1,8 +1,8 @@
 ﻿namespace ThinkingHome.Weather.Api;
 
-public class Class1
+public class YandexWeatherClient
 {
-    public static void SayMoo()
+    public void SayMoo()
     {
         Console.WriteLine("Moo!");
     }
