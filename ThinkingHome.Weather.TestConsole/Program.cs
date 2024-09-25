@@ -1,4 +1,5 @@
 ﻿using System.Net.Http;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using ThinkingHome.Weather.Api;
 
@@ -13,12 +14,16 @@ namespace ThinkingHome.Weather.TestConsole
             ttt.Wait();
         }
         static async Task Response() {
+            string yandexApi = "49a881a1-3e9a-45f0-b4e7-da8374231cab";
+            var lat = "44.706288";
+            var lon = "34.352471";
             HttpClient yandexWeather = new HttpClient()
             {
                 BaseAddress = new Uri("https://api.weather.yandex.ru/v2/"),
             };
-            yandexWeather.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", "c6e1cdc8-3f10-4583-a744-25e7eb042594");
-            string response = await yandexWeather.GetStringAsync("forecast?lat=52.37125&lon=4.89388");
+            yandexWeather.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", yandexApi);
+            string response = await yandexWeather.GetStringAsync("forecast?"+lat+"&"+lon);
+
             Console.WriteLine(response);
         }
     }
