@@ -1,9 +1,26 @@
-﻿namespace ThinkingHome.Weather.Api;
+﻿using System.Collections.Specialized;
+using System.Diagnostics.SymbolStore;
+using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
+
+namespace ThinkingHome.Weather.Api;
 
 public class YandexWeatherClient
 {
-    public void SayMoo()
+    private HttpClient yandexWeather = new HttpClient()
     {
-        Console.WriteLine("Moo!");
+        BaseAddress = new Uri("https://api.weather.yandex.ru/v2/"),
+    };
+
+    public YandexWeatherClient(string yandexApi)
+    {
+        yandexWeather.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", yandexApi);
+    }
+    public async Task<string> GetForecast(float lat, float lon)
+    {
+        lat.ToString();
+        lon.ToString();
+        string response = await yandexWeather.GetStringAsync($"forecast?{lat}&{lon}");
+        return response;
     }
 }
