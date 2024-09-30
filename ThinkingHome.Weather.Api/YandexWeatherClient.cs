@@ -2,6 +2,7 @@
 using System.Diagnostics.SymbolStore;
 using System.Globalization;
 using System.Security.Cryptography.X509Certificates;
+using System.Text.Json;
 
 namespace ThinkingHome.Weather.Api;
 
@@ -16,11 +17,12 @@ public class YandexWeatherClient
     {
         yandexWeather.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", yandexApi);
     }
-    public async Task<string> GetForecast(float lat, float lon)
+    public async Task<ForecastResponse> GetForecast(float lat, float lon)
     {
         lat.ToString();
         lon.ToString();
-        string response = await yandexWeather.GetStringAsync($"forecast?{lat}&{lon}");
+        string json = await yandexWeather.GetStringAsync($"forecast?{lat}&{lon}");
+        var response = JsonSerializer.Deserialize<ForecastResponse>(json);
         return response;
     }
 }
