@@ -13,15 +13,16 @@ public class YandexWeatherClient
         BaseAddress = new Uri("https://api.weather.yandex.ru/v2/"),
     };
 
-    public YandexWeatherClient(string yandexApi)
+    public YandexWeatherClient(string apiKey)
     {
-        yandexWeather.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", yandexApi);
+        yandexWeather.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", apiKey);
     }
     public async Task<ForecastResponse> GetForecast(float lat, float lon)
     {
-        lat.ToString();
-        lon.ToString();
-        string json = await yandexWeather.GetStringAsync($"forecast?{lat}&{lon}");
+        string slat = JsonSerializer.Serialize(lat);
+        string slon = JsonSerializer.Serialize(lon);
+        var url = $"forecast?lat={slat}&lon={slon}";
+        string json = await yandexWeather.GetStringAsync(url);
         var response = JsonSerializer.Deserialize<ForecastResponse>(json);
         return response;
     }
