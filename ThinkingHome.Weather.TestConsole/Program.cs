@@ -20,11 +20,13 @@ namespace ThinkingHome.Weather.TestConsole
         }
         static async Task Response(float lat, float lon, string apiKey) {
 
-            var weatherClient = new YandexWeatherClient(apiKey);
-            var response = await weatherClient.GetForecast(lat, lon);
+            using (var weatherClient = new YandexWeatherClient(apiKey))
+            {
+                var response = await weatherClient.GetForecast(lat, lon);
 
-            Console.WriteLine($"сейчас на улице {response.Fact.Temperature}°C");
-            Console.WriteLine($"ощущается как {response.Fact.FeelsLike}°C");
+                Console.WriteLine($"сейчас на улице {response.Fact.Temperature}°C");
+                Console.WriteLine($"ощущается как {response.Fact.FeelsLike}°C");
+            }
         }
     }
 }
