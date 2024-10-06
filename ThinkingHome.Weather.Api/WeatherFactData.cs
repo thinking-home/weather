@@ -1,4 +1,5 @@
 ﻿using System.Text.Json.Serialization;
+using ThinkingHome.Weather.Api.Model.Enum;
 
 namespace ThinkingHome.Weather.Api;
 
@@ -9,4 +10,26 @@ public class WeatherFactData {
 
     [JsonPropertyName("feels_like")]
     public int FeelsLike { get; set; }
+
+    [JsonPropertyName("obs_time")]
+    public int ObsTime { get; set; }
+
+    [JsonPropertyName("cloudness")]
+    public float Cloudness { get; set; }
+
+    [JsonPropertyName("humidity")]
+    public int Humidity { get; set; }
+
+    [JsonPropertyName("season")]
+    public Season Season { get; set; }
+
+    //[JsonPropertyName("icon")]
+    //public string Icon { get; set; }
+
+    //[JsonPropertyName("condition")]
+    //public string Condition { get; set; }
+
+    //[JsonPropertyName("daytime")]
+    //public string Daytime { get; set; }
+
 }
