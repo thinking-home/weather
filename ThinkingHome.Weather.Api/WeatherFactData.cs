@@ -32,7 +32,7 @@ public class WeatherFactData {
     public Daytime Daytime { get; set; }
 
     [JsonPropertyName("condition")]
-    public string Condition { get; set; }
+    public Condition Condition { get; set; }
 
     [JsonPropertyName("is_thunder")]
     public bool Is_thunder { get; set; }
@@ -47,10 +47,10 @@ public class WeatherFactData {
     public PrecType Prec_type { get; set; }
 
     [JsonPropertyName("pressure_mm")]
-    public int Pressure_mm { get; set; }
+    public int? Pressure_mm { get; set; }
 
     [JsonPropertyName("pressure_pa")]
-    public int Pressure_pa { get; set; }
+    public int? Pressure_pa { get; set; }
 
     [JsonPropertyName("uv_index")]
     public int Uv_index { get; set; }

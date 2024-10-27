@@ -10,21 +10,37 @@ namespace ThinkingHome.Weather.Api.Model.Enum
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum Condition
     {
-        clear,
-        //partly-сloudy,
-        cloudy,
-        overcast,
-        //light-rain,
-        rain,
-        //heavy-rain,
-        showers,
-        //wet-snow,
-        //light-snow,
-        snow,
-        //snow-showers,
-        hail,
-        thunderstorm,
-        //thunderstorm-with-rain,
-        //thunderstorm-with-hail
+        [JsonStringEnumMemberName("clear")]
+        Clear,
+        [JsonStringEnumMemberName("partly-сloudy")]
+        PartlyCloudy,
+        [JsonStringEnumMemberName("cloudy")]
+        Cloudy,
+        [JsonStringEnumMemberName("overcast")]
+        Overcast,
+        [JsonStringEnumMemberName("light-rain")]
+        LighRain,
+        [JsonStringEnumMemberName("rain")]
+        Rain,
+        [JsonStringEnumMemberName("heavy-rain")]
+        HeavyRain,
+        [JsonStringEnumMemberName("showers")]
+        Showers,
+        [JsonStringEnumMemberName("wet-snow")]
+        WetSnow,
+        [JsonStringEnumMemberName("light-snow")]
+        LightSnow,
+        [JsonStringEnumMemberName("snow")]
+        Snow,
+        [JsonStringEnumMemberName("snow-showers")]
+        SnowShowers,
+        [JsonStringEnumMemberName("hail")]
+        Hail,
+        [JsonStringEnumMemberName("thunderstorm")]
+        Thunderstorm,
+        [JsonStringEnumMemberName("thunderstorm-with-rain")]
+        ThunderstormWithRain,
+        [JsonStringEnumMemberName("thunderstorm-with-hail")]
+        ThunderstormWithHail
     }
 }
