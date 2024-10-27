@@ -10,9 +10,9 @@ namespace ThinkingHome.Weather.Api.Model.Enum
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum Daytime
     {
-        // day
-        d,
-        // night
-        n
+        [JsonStringEnumMemberName("d")]
+        Day,
+        [JsonStringEnumMemberName("n")]
+        Night
     }
 }

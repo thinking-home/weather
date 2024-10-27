@@ -10,9 +10,13 @@ namespace ThinkingHome.Weather.Api.Model.Enum
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum Season
     {
-        summer,
-        autumn,
-        winter,
-        spring
+        [JsonStringEnumMemberName("summer")]
+        Summer,
+        [JsonStringEnumMemberName("autumn")]
+        Autumn,
+        [JsonStringEnumMemberName("winter")]
+        Winter,
+        [JsonStringEnumMemberName("spring")]
+        Spring
     }
 }

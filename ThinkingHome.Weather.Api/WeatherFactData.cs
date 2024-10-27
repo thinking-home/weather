@@ -44,7 +44,7 @@ public class WeatherFactData {
     public float Prec_strength { get; set; }
 
     [JsonPropertyName("prec_type")]
-    public Prec_type Prec_type { get; set; }
+    public PrecType Prec_type { get; set; }
 
     [JsonPropertyName("pressure_mm")]
     public int Pressure_mm { get; set; }
@@ -59,7 +59,7 @@ public class WeatherFactData {
     public float Wind_angle { get; set; }
 
     [JsonPropertyName("wind_dir")]
-    public Wind_dir Wind_dir { get; set; }
+    public WindDirection WindDirection { get; set; }
 
     [JsonPropertyName("wind_gust")]
     public float Wind_gust { get; set; }

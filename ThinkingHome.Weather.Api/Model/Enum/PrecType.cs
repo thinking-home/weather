@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace ThinkingHome.Weather.Api.Model.Enum
 {
-    [JsonConverter(typeof(JsonStringEnumConverter))]
-    public enum Prec_type
+    public enum PrecType
     {
-        clear = 0,
-        rain = 1,
-        rainWithSnow = 2,
-        snow = 3,
-        hail = 4
+        Clear = 0,
+        Rain = 1,
+        RainWithSnow = 2,
+        Snow = 3,
+        Hail = 4
     }
 }
