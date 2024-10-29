@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace ThinkingHome.Weather.Api;
+namespace ThinkingHome.Weather.Api.Model;
 
 public class TimeZoneInfo
 {

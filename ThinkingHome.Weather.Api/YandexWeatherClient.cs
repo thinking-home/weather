@@ -3,6 +3,7 @@ using System.Diagnostics.SymbolStore;
 using System.Globalization;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.Json;
+using ThinkingHome.Weather.Api.Model;
 
 namespace ThinkingHome.Weather.Api;
 

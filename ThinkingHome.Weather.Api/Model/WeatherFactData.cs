@@ -2,7 +2,7 @@
 using ThinkingHome.Weather.Api.Model.Converters;
 using ThinkingHome.Weather.Api.Model.Enum;
 
-namespace ThinkingHome.Weather.Api;
+namespace ThinkingHome.Weather.Api.Model;
 
 public class WeatherFactData {
 
