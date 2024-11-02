@@ -17,7 +17,7 @@ public class WeatherFactData {
     public DateTime ObsTime { get; set; }
 
     [JsonPropertyName("cloudness")]
-    public float Cloudness { get; set; }
+    public Cloudness Cloudness { get; set; }
 
     [JsonPropertyName("humidity")]
     public int Humidity { get; set; }
