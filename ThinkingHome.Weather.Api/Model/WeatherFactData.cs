@@ -41,29 +41,29 @@ public class WeatherFactData {
     public bool Polar { get; set; }
 
     [JsonPropertyName("prec_strength")]
-    public float Prec_strength { get; set; }
+    public float PrecStrength { get; set; }
 
     [JsonPropertyName("prec_type")]
-    public PrecType Prec_type { get; set; }
+    public PrecType PrecType { get; set; }
 
     [JsonPropertyName("pressure_mm")]
-    public int? Pressure_mm { get; set; }
+    public int? PressureMm { get; set; }
 
     [JsonPropertyName("pressure_pa")]
-    public int? Pressure_pa { get; set; }
+    public int? PressurePa { get; set; }
 
     [JsonPropertyName("uv_index")]
-    public int Uv_index { get; set; }
+    public int UvIndex { get; set; }
 
     [JsonPropertyName("wind_angle")]
-    public float Wind_angle { get; set; }
+    public float WindAngle { get; set; }
 
     [JsonPropertyName("wind_dir")]
     public WindDirection WindDirection { get; set; }
 
     [JsonPropertyName("wind_gust")]
-    public float Wind_gust { get; set; }
+    public float WindGust { get; set; }
 
     [JsonPropertyName("wind_speed")]
-    public float Wind_speed { get; set; }
+    public float WindSpeed { get; set; }
 }

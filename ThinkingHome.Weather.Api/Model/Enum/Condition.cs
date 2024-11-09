@@ -12,14 +12,14 @@ namespace ThinkingHome.Weather.Api.Model.Enum
     {
         [JsonStringEnumMemberName("clear")]
         Clear,
-        [JsonStringEnumMemberName("partly-сloudy")]
+        [JsonStringEnumMemberName("partly-cloudy")]
         PartlyCloudy,
         [JsonStringEnumMemberName("cloudy")]
         Cloudy,
         [JsonStringEnumMemberName("overcast")]
         Overcast,
         [JsonStringEnumMemberName("light-rain")]
-        LighRain,
+        LightRain,
         [JsonStringEnumMemberName("rain")]
         Rain,
         [JsonStringEnumMemberName("heavy-rain")]
