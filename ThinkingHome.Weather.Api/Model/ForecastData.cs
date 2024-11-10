@@ -21,7 +21,7 @@ public class ForecastData
 
     [JsonPropertyName("moon_code")] public int MoonCode { get; set; }
 
-    [JsonPropertyName("parts")] public object Parts { get; set; }
+    [JsonPropertyName("parts")] public DayPartsWeatherData Parts { get; set; }
 
     [JsonPropertyName("hours")] public HourWeatherData[] Hours { get; set; }
 
