@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ThinkingHome.Weather.Api\ThinkingHome.Weather.Api.csproj" />
+        <ProjectReference Include="..\ThinkingHome.Weather.Api\ThinkingHome.Weather.Api.csproj"/>
     </ItemGroup>
 
 </Project>

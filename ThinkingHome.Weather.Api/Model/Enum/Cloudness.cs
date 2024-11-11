@@ -3,11 +3,11 @@ using ThinkingHome.Weather.Api.Model.Converters;
 
 namespace ThinkingHome.Weather.Api.Model.Enum;
 
-[JsonConverter(typeof(CloudnessConverter))] 
+[JsonConverter(typeof(CloudnessConverter))]
 public enum Cloudness
 {
     Clear,
-    PartlyCloudy, 
+    PartlyCloudy,
     Cloudy,
     PartlyOvercast,
     Overcast

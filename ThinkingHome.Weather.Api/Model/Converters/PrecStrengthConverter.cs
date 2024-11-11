@@ -8,7 +8,7 @@ public class PrecStrengthConverter : JsonConverter<PrecStrength>
 {
     public override PrecStrength Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
-        int value = Convert.ToInt32(reader.GetSingle()*100);
+        var value = Convert.ToInt32(reader.GetSingle() * 100);
         switch (value)
         {
             case 0:
@@ -24,7 +24,6 @@ public class PrecStrengthConverter : JsonConverter<PrecStrength>
             default:
                 throw new JsonException();
         }
-        
     }
 
     public override void Write(Utf8JsonWriter writer, PrecStrength value, JsonSerializerOptions options)

@@ -25,5 +25,4 @@ public class ForecastData
     [JsonPropertyName("parts")] public DayPartsWeatherData Parts { get; set; }
 
     [JsonPropertyName("hours")] public HourWeatherData[] Hours { get; set; }
-
 }
