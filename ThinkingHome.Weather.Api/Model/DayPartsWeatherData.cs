@@ -8,9 +8,6 @@ public class DayPartsWeatherData
     [JsonPropertyName("day")]
     public DayPartWeatherData Day { get; set; }
     
-    [JsonPropertyName("day_short")]
-    public DayPartWeatherData DayShort { get; set; }
-    
     [JsonPropertyName("evening")]
     public DayPartWeatherData Evening { get; set; }
     
@@ -21,5 +18,8 @@ public class DayPartsWeatherData
     public DayPartWeatherData Night { get; set; }
     
     [JsonPropertyName("night_short")]
-    public DayPartWeatherData NightShort { get; set; }
+    public DayPartShortWeatherData NightShort { get; set; }
+    
+    [JsonPropertyName("day_short")]
+    public DayPartShortWeatherData DayShort { get; set; }
 }

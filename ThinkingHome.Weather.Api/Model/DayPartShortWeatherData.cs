@@ -4,15 +4,14 @@ using ThinkingHome.Weather.Api.Model.Enum;
 
 namespace ThinkingHome.Weather.Api.Model;
 
-public class HourWeatherData
+public class DayPartShortWeatherData
 {
-    [JsonNumberHandling(JsonNumberHandling.AllowReadingFromString | JsonNumberHandling.WriteAsString)]
-    [JsonPropertyName("hour")]
-    public int Hour { get; set; }
-    
-    [JsonConverter(typeof(UnixDateTimeConverter))]
-    [JsonPropertyName("hour_ts")]
-    public DateTime Timestamp { get; set; }
+    [JsonPropertyName("daytime")]
+    public Daytime Daytime { get; set; }
+
+    [JsonConverter(typeof(SourceConverter))]
+    [JsonPropertyName("_source")]
+    public int[] Sourse { get; set; }
     
     [JsonPropertyName("cloudness")]
     public Cloudness Cloudness { get; set; }
@@ -20,17 +19,20 @@ public class HourWeatherData
     [JsonPropertyName("condition")]
     public Condition Condition { get; set; }
     
-    [JsonPropertyName("feels_like")]
-    public int FeelsLike { get; set; }
-    
     [JsonPropertyName("humidity")]
     public int Humidity { get; set; }
     
     [JsonPropertyName("icon")]
     public string Icon { get; set; }
     
-    [JsonPropertyName("is_thunder")]
-    public bool IsThunder { get; set; }
+    [JsonPropertyName("polar")]
+    public bool Polar { get; set; }
+    
+    [JsonPropertyName("fresh_snow_mm")]
+    public float FreshSnowMm { get; set; }
+    
+    [JsonPropertyName("prec_mm")]
+    public float PrecMm { get; set; }
     
     [JsonPropertyName("prec_period")]
     public int PrecPeriod { get; set; }
@@ -41,8 +43,14 @@ public class HourWeatherData
     [JsonPropertyName("prec_type")]
     public PrecType PrecType { get; set; }
     
+    [JsonPropertyName("prec_prob")]
+    public int PrecProb { get; set; }
+    
     [JsonPropertyName("temp")]
     public int Temperature { get; set; }
+
+    [JsonPropertyName("feels_like")]
+    public int FeelsLike { get; set; }
     
     [JsonPropertyName("uv_index")]
     public int UvIndex { get; set; }
