@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using ThinkingHome.Weather.Api.Model.Converters;
+using ThinkingHome.Weather.Api.Model.Enum;
 
 namespace ThinkingHome.Weather.Api.Model;
 
@@ -7,7 +8,7 @@ public class ForecastData
 {
     [JsonConverter(typeof(UnixDateTimeConverter))]
     [JsonPropertyName("date_ts")]
-    public DateTime DateTs { get; set; }
+    public DateTime Date { get; set; }
 
     [JsonPropertyName("week")] public int Week { get; set; }
 
@@ -19,7 +20,7 @@ public class ForecastData
 
     [JsonPropertyName("set_end")] public string SetEnd { get; set; }
 
-    [JsonPropertyName("moon_code")] public int MoonCode { get; set; }
+    [JsonPropertyName("moon_code")] public MoonPhase MoonPhase { get; set; }
 
     [JsonPropertyName("parts")] public DayPartsWeatherData Parts { get; set; }
 
