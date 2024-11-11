@@ -35,13 +35,13 @@ public class WeatherFactData {
     public Condition Condition { get; set; }
 
     [JsonPropertyName("is_thunder")]
-    public bool Is_thunder { get; set; }
+    public bool IsThunder { get; set; }
 
     [JsonPropertyName("polar")]
     public bool Polar { get; set; }
 
     [JsonPropertyName("prec_strength")]
-    public float PrecStrength { get; set; }
+    public PrecStrength PrecStrength { get; set; }
 
     [JsonPropertyName("prec_type")]
     public PrecType PrecType { get; set; }

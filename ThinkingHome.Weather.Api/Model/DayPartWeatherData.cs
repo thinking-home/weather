@@ -32,7 +32,7 @@ public class DayPartWeatherData
     public int PrecPeriod { get; set; }
     
     [JsonPropertyName("prec_strength")]
-    public float PrecStrength { get; set; }
+    public PrecStrength PrecStrength { get; set; }
     
     [JsonPropertyName("prec_type")]
     public PrecType PrecType { get; set; }
