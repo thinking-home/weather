@@ -25,7 +25,6 @@ public class YandexWeatherClient : IDisposable
         var slat = JsonSerializer.Serialize(lat);
         var slon = JsonSerializer.Serialize(lon);
         var json = await yandexWeatherHttp.GetStringAsync($"forecast?lat={slat}&lon={slon}");
-        Console.WriteLine(json);
         var response = JsonSerializer.Deserialize<ForecastResponse>(json);
         return response;
     }
