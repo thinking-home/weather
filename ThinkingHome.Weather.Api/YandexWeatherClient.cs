@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using Microsoft.Extensions.Logging;
 using ThinkingHome.Weather.Api.Model;
 
 namespace ThinkingHome.Weather.Api;
@@ -9,10 +10,15 @@ public class YandexWeatherClient : IDisposable
     {
         BaseAddress = new Uri("https://api.weather.yandex.ru/v2/")
     };
-
-    public YandexWeatherClient(string apiKey)
+    
+    
+    private readonly ILogger logger; 
+    
+    public YandexWeatherClient(string apiKey, ILogger logger)
     {
         yandexWeatherHttp.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", apiKey);
+        this.logger = logger;
+        logger.LogInformation($"Yandex Weather API Key: {apiKey}");
     }
 
     public void Dispose()
