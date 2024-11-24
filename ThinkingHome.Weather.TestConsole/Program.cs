@@ -1,4 +1,6 @@
-﻿using ThinkingHome.Weather.Api;
+﻿using Microsoft.Extensions.Logging;
+using ThinkingHome.Weather.Api;
+
 
 namespace ThinkingHome.Weather.TestConsole;
 
@@ -12,10 +14,12 @@ internal class Program
         var ttt = Response(lat, lon, apiKey);
         ttt.Wait();
     }
-
+    
     private static async Task Response(float lat, float lon, string apiKey)
     {
-        using (var weatherClient = new YandexWeatherClient(apiKey))
+        using ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole());
+        ILogger logger = factory.CreateLogger("Program");
+        using (var weatherClient = new YandexWeatherClient(apiKey, logger))
         {
             var response = await weatherClient.GetForecast(lat, lon);
 
