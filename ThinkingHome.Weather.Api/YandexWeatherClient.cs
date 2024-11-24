@@ -36,9 +36,17 @@ public class YandexWeatherClient : IDisposable
     {
         var slat = JsonSerializer.Serialize(lat);
         var slon = JsonSerializer.Serialize(lon);
-        
         logger.LogInformation($"Getting forecast for {slat}, {slon}");
-        var json = await yandexWeatherHttp.GetStringAsync($"forecast?lat={slat}&lon={slon}");
+        
+        DateTime start = DateTime.Now;
+        var responseMessage = await yandexWeatherHttp.GetAsync($"forecast?lat={slat}&lon={slon}");
+        var time = DateTime.Now - start;
+        var reqId = responseMessage.Headers.GetValues("X-Req-Id").FirstOrDefault() ?? "<unknown>";
+        
+        logger.LogInformation($"Response received: {responseMessage.ReasonPhrase}, time: {time.TotalMilliseconds:0.000} ms, reqID: {reqId}");
+        responseMessage.EnsureSuccessStatusCode();
+        
+        var json = await responseMessage.Content.ReadAsStringAsync();
         var response = JsonSerializer.Deserialize<ForecastResponse>(json);
         return response;
     }
