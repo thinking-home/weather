@@ -62,7 +62,7 @@ public class YandexWeatherClient : IDisposable
         catch(Exception ex)
         {
             logger.LogError(ex, "Getting forecast failed");
-            return null;
+            throw;
         }
     }
 }

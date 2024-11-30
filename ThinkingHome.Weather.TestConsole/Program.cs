@@ -25,10 +25,16 @@ internal class Program
         ILogger logger = factory.CreateLogger("Program");
         using (var weatherClient = new YandexWeatherClient(apiKey, logger))
         {
-            var response = await weatherClient.GetForecast(lat, lon);
-
-            Console.WriteLine($"сейчас на улице {response.Fact.Temperature}°C");
-            Console.WriteLine($"ощущается как {response.Fact.FeelsLike}°C");
+            try
+            {
+                var response = await weatherClient.GetForecast(lat, lon);
+                Console.WriteLine($"сейчас на улице {response.Fact.Temperature}°C");
+                Console.WriteLine($"ощущается как {response.Fact.FeelsLike}°C");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }
