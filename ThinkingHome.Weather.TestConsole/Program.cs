@@ -17,7 +17,11 @@ internal class Program
     
     private static async Task Response(float lat, float lon, string apiKey)
     {
-        using ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole());
+        using ILoggerFactory factory = LoggerFactory.Create(builder =>
+        {
+            builder.AddConsole();
+            builder.SetMinimumLevel(LogLevel.Error);
+        });
         ILogger logger = factory.CreateLogger("Program");
         using (var weatherClient = new YandexWeatherClient(apiKey, logger))
         {

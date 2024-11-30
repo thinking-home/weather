@@ -55,12 +55,13 @@ public class YandexWeatherClient : IDisposable
             responseMessage.EnsureSuccessStatusCode();
 
             var json = await responseMessage.Content.ReadAsStringAsync();
+            logger.LogDebug(json);
             var response = JsonSerializer.Deserialize<ForecastResponse>(json);
             return response;
         }
-        catch
+        catch(Exception ex)
         {
-            logger.LogInformation("Getting forecast failed");
+            logger.LogError(ex, "Getting forecast failed");
             return null;
         }
     }
