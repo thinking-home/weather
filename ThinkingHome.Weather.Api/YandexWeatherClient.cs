@@ -12,23 +12,23 @@ public class YandexWeatherClient : IDisposable
     };
     
     
-    private readonly ILogger logger;
+    private readonly ILogger? logger;
 
     private string MaskApiKey(string apiKey)
     {
         return apiKey.Substring(apiKey.Length - 6);
     }
 
-    public YandexWeatherClient(string apiKey, ILogger logger)
+    public YandexWeatherClient(string apiKey, ILogger? logger = null)
     {
         yandexWeatherHttp.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", apiKey);
         this.logger = logger;
-        logger.LogInformation($"Yandex Weather API Key: ***{MaskApiKey(apiKey)}");
+        logger?.LogInformation($"Yandex Weather API Key: ***{MaskApiKey(apiKey)}");
     }
 
     public void Dispose()
     {
-        logger.LogInformation("Dispose weather client");
+        logger?.LogInformation("Dispose weather client");
         yandexWeatherHttp.Dispose();
     }
 
@@ -36,7 +36,7 @@ public class YandexWeatherClient : IDisposable
     {
         var slat = JsonSerializer.Serialize(lat);
         var slon = JsonSerializer.Serialize(lon);
-        logger.LogInformation($"Getting forecast for {slat}, {slon}");
+        logger?.LogInformation($"Getting forecast for {slat}, {slon}");
 
         try
         {
@@ -50,18 +50,18 @@ public class YandexWeatherClient : IDisposable
                 reqId = res.FirstOrDefault();
             }
 
-            logger.LogInformation(
+            logger?.LogInformation(
                 $"Response received: {responseMessage.ReasonPhrase}, time: {time.TotalMilliseconds:0.000} ms, reqID: {reqId}");
             responseMessage.EnsureSuccessStatusCode();
 
             var json = await responseMessage.Content.ReadAsStringAsync();
-            logger.LogDebug(json);
+            logger?.LogDebug(json);
             var response = JsonSerializer.Deserialize<ForecastResponse>(json);
             return response;
         }
         catch(Exception ex)
         {
-            logger.LogError(ex, "Getting forecast failed");
+            logger?.LogError(ex, "Getting forecast failed");
             throw;
         }
     }

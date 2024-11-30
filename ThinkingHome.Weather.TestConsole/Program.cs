@@ -23,18 +23,16 @@ internal class Program
             builder.SetMinimumLevel(LogLevel.Error);
         });
         ILogger logger = factory.CreateLogger("Program");
-        using (var weatherClient = new YandexWeatherClient(apiKey, logger))
+        using var weatherClient = new YandexWeatherClient(apiKey, logger);
+        try
         {
-            try
-            {
-                var response = await weatherClient.GetForecast(lat, lon);
-                Console.WriteLine($"сейчас на улице {response.Fact.Temperature}°C");
-                Console.WriteLine($"ощущается как {response.Fact.FeelsLike}°C");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
+            var response = await weatherClient.GetForecast(lat, lon);
+            Console.WriteLine($"сейчас на улице {response.Fact.Temperature}°C");
+            Console.WriteLine($"ощущается как {response.Fact.FeelsLike}°C");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
         }
     }
 }
