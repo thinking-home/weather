@@ -13,17 +13,19 @@ public class YandexWeatherClient : IDisposable
     
     
     private readonly ILogger? logger;
+    private readonly string[] apiKeys;
 
     private string MaskApiKey(string apiKey)
     {
         return apiKey.Substring(apiKey.Length - 6);
     }
 
-    public YandexWeatherClient(string apiKey, ILogger? logger = null)
+    public YandexWeatherClient(string[] apiKeys, ILogger? logger = null)
     {
-        yandexWeatherHttp.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", apiKey);
+        this.apiKeys = apiKeys;
+        /*yandexWeatherHttp.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", apiKey);*/
         this.logger = logger;
-        logger?.LogInformation($"Yandex Weather API Key: ***{MaskApiKey(apiKey)}");
+        /*logger?.LogInformation($"Yandex Weather API Key: ***{MaskApiKey(apiKey)}");*/
     }
 
     public void Dispose()
@@ -41,7 +43,7 @@ public class YandexWeatherClient : IDisposable
         try
         {
             DateTime start = DateTime.Now;
-            var responseMessage = await yandexWeatherHttp.GetAsync($"forecast?lat={slat}&lon={slon}");
+            var responseMessage = await MakeRequest(slat, slon);
             var time = DateTime.Now - start;
             
             var reqId = "<unknown>";
@@ -64,5 +66,21 @@ public class YandexWeatherClient : IDisposable
             logger?.LogError(ex, "Getting forecast failed");
             throw;
         }
+    }
+
+    private async Task<HttpResponseMessage> MakeRequest(string slat, string slon)
+    {
+        var request = new HttpRequestMessage
+        {
+            Method = HttpMethod.Get,
+            RequestUri = new Uri($"forecast?lat={slat}&lon={slon}", UriKind.Relative),
+            Headers = { 
+                { "X-Yandex-Weather-Key", apiKeys[0]}
+            },
+        };
+        
+        
+        var responseMessage = await yandexWeatherHttp.SendAsync(request);
+        return responseMessage;
     }
 }
