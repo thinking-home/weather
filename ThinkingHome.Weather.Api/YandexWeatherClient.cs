@@ -23,9 +23,8 @@ public class YandexWeatherClient : IDisposable
     public YandexWeatherClient(string[] apiKeys, ILogger? logger = null)
     {
         this.apiKeys = apiKeys;
-        /*yandexWeatherHttp.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", apiKey);*/
         this.logger = logger;
-        /*logger?.LogInformation($"Yandex Weather API Key: ***{MaskApiKey(apiKey)}");*/
+        logger?.LogInformation($"Created Yandex Weather Client. Keys count: {apiKeys.Length}");
     }
 
     public void Dispose()
@@ -70,16 +69,17 @@ public class YandexWeatherClient : IDisposable
 
     private async Task<HttpResponseMessage> MakeRequest(string slat, string slon)
     {
+        var apiKey = apiKeys[0];
         var request = new HttpRequestMessage
         {
             Method = HttpMethod.Get,
             RequestUri = new Uri($"forecast?lat={slat}&lon={slon}", UriKind.Relative),
             Headers = { 
-                { "X-Yandex-Weather-Key", apiKeys[0]}
+                { "X-Yandex-Weather-Key", apiKey}
             },
         };
         
-        
+        logger?.LogInformation($"Yandex Weather API Key: ***{MaskApiKey(apiKey)}");
         var responseMessage = await yandexWeatherHttp.SendAsync(request);
         return responseMessage;
     }
