@@ -29,6 +29,9 @@ internal class Program
             var response = await weatherClient.GetForecast(lat, lon);
             Console.WriteLine($"сейчас на улице {response.Fact.Temperature}°C");
             Console.WriteLine($"ощущается как {response.Fact.FeelsLike}°C");
+            
+            var response2 = await weatherClient.GetForecast(lat, lon);
+            
         }
         catch (Exception e)
         {
