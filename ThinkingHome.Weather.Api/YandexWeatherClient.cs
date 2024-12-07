@@ -45,19 +45,8 @@ public class YandexWeatherClient : IDisposable
 
         try
         {
-            DateTime start = DateTime.Now;
-            
             var responseMessage = await MakeRequest(slat, slon);
-            var time = DateTime.Now - start;
             
-            var reqId = "<unknown>";
-            if (responseMessage.Headers.TryGetValues("X-Req-Id", out var res))
-            {
-                reqId = res.FirstOrDefault();
-            }
-            
-            logger?.LogInformation(
-                $"Response received: {responseMessage.ReasonPhrase}, time: {time.TotalMilliseconds:0.000} ms, reqID: {reqId}");
             responseMessage.EnsureSuccessStatusCode();
 
             var json = await responseMessage.Content.ReadAsStringAsync();
@@ -87,10 +76,23 @@ public class YandexWeatherClient : IDisposable
             };
         
             logger?.LogInformation($"Using API Key: ***{MaskApiKey(apiKey)}");
+            
+            DateTime start = DateTime.Now;
             var responseMessage = await yandexWeatherHttp.SendAsync(request);
+            var time = DateTime.Now - start;
+            
+            var reqId = "<unknown>";
+            if (responseMessage.Headers.TryGetValues("X-Req-Id", out var res))
+            {
+                reqId = res.FirstOrDefault();
+            }
+            
+            logger?.LogInformation($"Response received: {responseMessage.ReasonPhrase}, time: {time.TotalMilliseconds:0.000} ms, reqID: {reqId}");
+            
             if (responseMessage.StatusCode == HttpStatusCode.Forbidden)
             {
                 index++;
+                logger?.LogError($"***{MaskApiKey(apiKey)} API Key was revoked");
             }
             else
             {
