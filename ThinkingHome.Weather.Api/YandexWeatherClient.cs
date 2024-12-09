@@ -5,7 +5,6 @@ using Microsoft.Extensions.Logging;
 using ThinkingHome.Weather.Api.Model;
 
 namespace ThinkingHome.Weather.Api;
-
 public class YandexWeatherClient : IDisposable
 {
     private int index = 0;
@@ -99,7 +98,6 @@ public class YandexWeatherClient : IDisposable
                 return responseMessage;
             }
         }
-
-        throw new Exception();
+        throw new NoValidAPIKeysException();
     }
 }
