@@ -10,4 +10,8 @@
       <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="TODO.md" />
+    </ItemGroup>
+
 </Project>

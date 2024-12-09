@@ -1,4 +1,6 @@
-﻿using System.Text.Json;
+﻿using System.Linq.Expressions;
+using System.Net;
+using System.Text.Json;
 using Microsoft.Extensions.Logging;
 using ThinkingHome.Weather.Api.Model;
 
@@ -6,25 +8,33 @@ namespace ThinkingHome.Weather.Api;
 
 public class YandexWeatherClient : IDisposable
 {
+    private int index = 0;
+
     private readonly HttpClient yandexWeatherHttp = new()
     {
         BaseAddress = new Uri("https://api.weather.yandex.ru/v2/")
     };
-    
-    
+
+
     private readonly ILogger? logger;
+    private readonly string[] apiKeys;
 
     private string MaskApiKey(string apiKey)
     {
         return apiKey.Substring(apiKey.Length - 6);
     }
 
-    public YandexWeatherClient(string apiKey, ILogger? logger = null)
+    public YandexWeatherClient(string[] apiKeys, ILogger? logger = null)
     {
-        yandexWeatherHttp.DefaultRequestHeaders.Add("X-Yandex-Weather-Key", apiKey);
+        this.apiKeys = apiKeys.Distinct().ToArray();
         this.logger = logger;
-        logger?.LogInformation($"Yandex Weather API Key: ***{MaskApiKey(apiKey)}");
+        logger?.LogInformation($"Created Yandex Weather Client. Keys count: {apiKeys.Length}");
     }
+
+    public YandexWeatherClient(string apiKey, ILogger? logger = null) : this([apiKey], logger)
+    {
+    }
+
 
     public void Dispose()
     {
@@ -40,10 +50,43 @@ public class YandexWeatherClient : IDisposable
 
         try
         {
+            var responseMessage = await MakeRequest(slat, slon);
+
+            responseMessage.EnsureSuccessStatusCode();
+
+            var json = await responseMessage.Content.ReadAsStringAsync();
+            logger?.LogDebug(json);
+            var response = JsonSerializer.Deserialize<ForecastResponse>(json);
+            return response;
+        }
+        catch (Exception ex)
+        {
+            logger?.LogError(ex, "Getting forecast failed");
+            throw;
+        }
+    }
+
+    private async Task<HttpResponseMessage> MakeRequest(string slat, string slon)
+    {
+        while (index < apiKeys.Length)
+        {
+            var apiKey = apiKeys[index];
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"forecast?lat={slat}&lon={slon}", UriKind.Relative),
+                Headers =
+                {
+                    { "X-Yandex-Weather-Key", apiKey }
+                },
+            };
+
+            logger?.LogInformation($"Using API Key: ***{MaskApiKey(apiKey)}");
+
             DateTime start = DateTime.Now;
-            var responseMessage = await yandexWeatherHttp.GetAsync($"forecast?lat={slat}&lon={slon}");
+            var responseMessage = await yandexWeatherHttp.SendAsync(request);
             var time = DateTime.Now - start;
-            
+
             var reqId = "<unknown>";
             if (responseMessage.Headers.TryGetValues("X-Req-Id", out var res))
             {
@@ -52,17 +95,18 @@ public class YandexWeatherClient : IDisposable
 
             logger?.LogInformation(
                 $"Response received: {responseMessage.ReasonPhrase}, time: {time.TotalMilliseconds:0.000} ms, reqID: {reqId}");
-            responseMessage.EnsureSuccessStatusCode();
 
-            var json = await responseMessage.Content.ReadAsStringAsync();
-            logger?.LogDebug(json);
-            var response = JsonSerializer.Deserialize<ForecastResponse>(json);
-            return response;
+            if (responseMessage.StatusCode == HttpStatusCode.Forbidden)
+            {
+                index++;
+                logger?.LogError($"***{MaskApiKey(apiKey)} API Key was revoked");
+            }
+            else
+            {
+                return responseMessage;
+            }
         }
-        catch(Exception ex)
-        {
-            logger?.LogError(ex, "Getting forecast failed");
-            throw;
-        }
+
+        throw new NoValidAPIKeysException();
     }
 }
