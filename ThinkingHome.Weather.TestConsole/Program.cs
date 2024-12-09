@@ -31,7 +31,6 @@ internal class Program
             Console.WriteLine($"ощущается как {response.Fact.FeelsLike}°C");
             
             var response2 = await weatherClient.GetForecast(lat, lon);
-            
         }
         catch (Exception e)
         {
