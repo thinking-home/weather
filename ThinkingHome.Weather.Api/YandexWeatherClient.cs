@@ -30,6 +30,11 @@ public class YandexWeatherClient : IDisposable
         logger?.LogInformation($"Created Yandex Weather Client. Keys count: {apiKeys.Length}");
     }
 
+    public YandexWeatherClient(string apiKey, ILogger? logger = null) : this([apiKey], logger)
+    {
+    }
+
+
     public void Dispose()
     {
         logger?.LogInformation("Dispose weather client");
