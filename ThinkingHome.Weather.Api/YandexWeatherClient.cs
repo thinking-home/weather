@@ -5,16 +5,17 @@ using Microsoft.Extensions.Logging;
 using ThinkingHome.Weather.Api.Model;
 
 namespace ThinkingHome.Weather.Api;
+
 public class YandexWeatherClient : IDisposable
 {
     private int index = 0;
-    
+
     private readonly HttpClient yandexWeatherHttp = new()
     {
         BaseAddress = new Uri("https://api.weather.yandex.ru/v2/")
     };
-    
-    
+
+
     private readonly ILogger? logger;
     private readonly string[] apiKeys;
 
@@ -50,7 +51,7 @@ public class YandexWeatherClient : IDisposable
         try
         {
             var responseMessage = await MakeRequest(slat, slon);
-            
+
             responseMessage.EnsureSuccessStatusCode();
 
             var json = await responseMessage.Content.ReadAsStringAsync();
@@ -58,13 +59,13 @@ public class YandexWeatherClient : IDisposable
             var response = JsonSerializer.Deserialize<ForecastResponse>(json);
             return response;
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             logger?.LogError(ex, "Getting forecast failed");
             throw;
         }
     }
-    
+
     private async Task<HttpResponseMessage> MakeRequest(string slat, string slon)
     {
         while (index < apiKeys.Length)
@@ -74,25 +75,27 @@ public class YandexWeatherClient : IDisposable
             {
                 Method = HttpMethod.Get,
                 RequestUri = new Uri($"forecast?lat={slat}&lon={slon}", UriKind.Relative),
-                Headers = { 
-                    { "X-Yandex-Weather-Key", apiKey}
+                Headers =
+                {
+                    { "X-Yandex-Weather-Key", apiKey }
                 },
             };
-        
+
             logger?.LogInformation($"Using API Key: ***{MaskApiKey(apiKey)}");
-            
+
             DateTime start = DateTime.Now;
             var responseMessage = await yandexWeatherHttp.SendAsync(request);
             var time = DateTime.Now - start;
-            
+
             var reqId = "<unknown>";
             if (responseMessage.Headers.TryGetValues("X-Req-Id", out var res))
             {
                 reqId = res.FirstOrDefault();
             }
-            
-            logger?.LogInformation($"Response received: {responseMessage.ReasonPhrase}, time: {time.TotalMilliseconds:0.000} ms, reqID: {reqId}");
-            
+
+            logger?.LogInformation(
+                $"Response received: {responseMessage.ReasonPhrase}, time: {time.TotalMilliseconds:0.000} ms, reqID: {reqId}");
+
             if (responseMessage.StatusCode == HttpStatusCode.Forbidden)
             {
                 index++;
@@ -103,6 +106,7 @@ public class YandexWeatherClient : IDisposable
                 return responseMessage;
             }
         }
+
         throw new NoValidAPIKeysException();
     }
 }
