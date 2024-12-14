@@ -4,7 +4,7 @@ using ThinkingHome.Weather.Api.Model.Enum;
 
 namespace ThinkingHome.Weather.Api.Model.Converters;
 
-public class CloudnessConverter : JsonConverter<Cloudness>
+internal class CloudnessConverter : JsonConverter<Cloudness>
 {
     public override Cloudness Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {

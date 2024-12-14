@@ -1,0 +1,4 @@
+attributeRules:
+  - exclude:
+      uidRegex: ^System\.Text\.Json\.Serialization$
+      type: Namespace

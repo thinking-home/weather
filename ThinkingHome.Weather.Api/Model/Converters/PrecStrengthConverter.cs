@@ -4,7 +4,7 @@ using ThinkingHome.Weather.Api.Model.Enum;
 
 namespace ThinkingHome.Weather.Api.Model.Converters;
 
-public class PrecStrengthConverter : JsonConverter<PrecStrength>
+internal class PrecStrengthConverter : JsonConverter<PrecStrength>
 {
     public override PrecStrength Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {

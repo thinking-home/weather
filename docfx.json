@@ -10,7 +10,11 @@
           ]
         }
       ],
-      "dest": "_api"
+      "dest": "_api",
+      "namespaceLayout": "nested",
+      "enumSortOrder": "declaringOrder",
+      "disableGitFeatures": true,
+      "filter":"filterConfig.yml" 
     }
   ],
   "build": {
