@@ -4,27 +4,69 @@ using ThinkingHome.Weather.Api.Model.Enum;
 
 namespace ThinkingHome.Weather.Api.Model;
 
+/// <summary>
+/// Информация о текущей погоде
+/// </summary>
 public class WeatherFactData : IWeatherData
 {
-    [JsonPropertyName("feels_like")] public int FeelsLike { get; set; }
+    /// <summary>
+    /// Ощущаемая температура (°C)
+    /// </summary>
+    [JsonPropertyName("feels_like")]
+    public int FeelsLike { get; set; }
 
+    /// <summary>
+    /// Время замера погодных данных
+    /// </summary>
     [JsonConverter(typeof(UnixDateTimeConverter))]
     [JsonPropertyName("obs_time")]
     public DateTime ObsTime { get; set; }
 
-    [JsonPropertyName("season")] public Season Season { get; set; }
+    /// <summary>
+    /// Время года
+    /// </summary>
+    [JsonPropertyName("season")]
+    public Season Season { get; set; }
 
-    [JsonPropertyName("icon")] public string Icon { get; set; }
+    /// <summary>
+    /// Код иконки погоды. Иконка доступна по адресу
+    /// <code>https://yastatic.net/weather/i/icons/funky/dark/&lt;значение-из-поля-icon&gt;.svg</code>
+    /// <see href="https://yandex.ru/dev/weather/doc/ru/concepts/icons">
+    /// Список доступных иконок</see>
+    /// </summary>
+    [JsonPropertyName("icon")]
+    public string Icon { get; set; }
 
-    [JsonPropertyName("daytime")] public Daytime Daytime { get; set; }
+    /// <summary>
+    /// Светлое или темное время суток
+    /// </summary>
+    [JsonPropertyName("daytime")]
+    public Daytime Daytime { get; set; }
 
-    [JsonPropertyName("is_thunder")] public bool IsThunder { get; set; }
+    /// <summary>
+    /// Признак грозы
+    /// </summary>
+    [JsonPropertyName("is_thunder")]
+    public bool IsThunder { get; set; }
 
-    [JsonPropertyName("polar")] public bool Polar { get; set; }
+    /// <summary>
+    /// Признак того, что время суток, указанное в поле <c>Daytime</c>,
+    /// является полярным
+    /// </summary>
+    [JsonPropertyName("polar")]
+    public bool Polar { get; set; }
 
-    [JsonPropertyName("pressure_mm")] public int? PressureMm { get; set; }
+    /// <summary>
+    /// Давление (в мм рт. ст.)
+    /// </summary>
+    [JsonPropertyName("pressure_mm")]
+    public int? PressureMm { get; set; }
 
-    [JsonPropertyName("pressure_pa")] public int? PressurePa { get; set; }
+    /// <summary>
+    /// Давление (в гектопаскалях)
+    /// </summary>
+    [JsonPropertyName("pressure_pa")]
+    public int? PressurePa { get; set; }
 
     [JsonPropertyName("temp")] public int Temperature { get; set; }
 

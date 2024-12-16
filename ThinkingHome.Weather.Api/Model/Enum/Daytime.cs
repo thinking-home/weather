@@ -3,7 +3,7 @@
 namespace ThinkingHome.Weather.Api.Model.Enum;
 
 /// <summary>
-/// Время суток
+/// Светлое или темное время суток
 /// </summary>
 [JsonConverter(typeof(JsonStringEnumConverter))]
 public enum Daytime
