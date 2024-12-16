@@ -51,13 +51,25 @@ public class YandexWeatherClient : IDisposable
     {
     }
 
-
+    /// <summary>
+    /// Выполняет определенные приложением задачи, связанные с освобождением, разгружением
+    /// или сбросом неуправляемых ресурсов.
+    /// </summary>
     public void Dispose()
     {
         logger?.LogInformation("Dispose weather client");
         yandexWeatherHttp.Dispose();
     }
 
+    /// <summary>
+    /// Получает данные о погоде в заданном месте Земли
+    /// </summary>
+    /// <param name="lat">Широта</param>
+    /// <param name="lon">Долгота</param>
+    /// <exception cref="NoValidAPIKeysException">
+    /// Исключение произойдет, если нет действительных ключей доступа к API (например, на всех переданных ключах
+    /// превышен лимит запросов)
+    /// </exception>
     public async Task<ForecastResponse> GetForecast(float lat, float lon)
     {
         var slat = JsonSerializer.Serialize(lat);
@@ -123,6 +135,6 @@ public class YandexWeatherClient : IDisposable
             }
         }
 
-        throw new NoValidAPIKeysException();
+        throw new NoValidApiKeysException();
     }
 }

@@ -29,7 +29,7 @@ internal class Program
             Console.WriteLine($"сейчас на улице {response.Fact.Temperature}°C");
             Console.WriteLine($"ощущается как {response.Fact.FeelsLike}°C");
         }
-        catch (NoValidAPIKeysException e)
+        catch (NoValidApiKeysException e)
         {
             Console.WriteLine("Закончились рабочие ключи");
         }
