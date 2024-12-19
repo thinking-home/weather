@@ -10,5 +10,7 @@ public class NoValidApiKeysException : Exception
     /// Создает экземпляр исключения
     /// </summary>
     public NoValidApiKeysException()
-        : base("No valid keys to make request to Yandex Weather") { }
+        : base("No valid keys to make request to Yandex Weather")
+    {
+    }
 }

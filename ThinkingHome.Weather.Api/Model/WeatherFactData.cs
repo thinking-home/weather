@@ -29,7 +29,7 @@ public class WeatherFactData : IWeatherData
     public Season Season { get; set; }
 
     /// <summary>
-    /// Код иконки погоды. Иконка доступна по адресу
+    /// Код иконки погодных условий с учетом времени суток. Иконка доступна по адресу
     /// <code>https://yastatic.net/weather/i/icons/funky/dark/&lt;значение-из-поля-icon&gt;.svg</code>
     /// <see href="https://yandex.ru/dev/weather/doc/ru/concepts/icons">
     /// Список доступных иконок</see>

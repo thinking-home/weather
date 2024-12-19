@@ -14,12 +14,13 @@ internal class Program
         var ttt = Response(lat, lon, apiKeys);
         ttt.Wait();
     }
+
     private static async Task Response(float lat, float lon, string[] apiKeys)
     {
         using ILoggerFactory factory = LoggerFactory.Create(builder =>
         {
             builder.AddConsole();
-            builder.SetMinimumLevel(LogLevel.Information);       // уровень логирования
+            builder.SetMinimumLevel(LogLevel.Information); // уровень логирования
         });
         ILogger logger = factory.CreateLogger("Program");
         using var weatherClient = new YandexWeatherClient(apiKeys, logger);
