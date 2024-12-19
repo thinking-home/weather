@@ -6,6 +6,12 @@ using ThinkingHome.Weather.Api.Model;
 
 namespace ThinkingHome.Weather.Api;
 
+/// <summary>
+/// Этот класс предоставляет API для получения данных о погоде из API
+/// сервиса <see href="https://yandex.ru/dev/weather/doc/ru/concepts/weather-data-api">Яндекс Погода</see>.
+/// Для работы вам понадобится ключ доступа,
+/// который можно получить в <see href="https://yandex.ru/pogoda/b2b/console/smarthome">личном кабинете</see>.
+/// </summary>
 public class YandexWeatherClient : IDisposable
 {
     private int index = 0;
@@ -24,6 +30,11 @@ public class YandexWeatherClient : IDisposable
         return apiKey.Substring(apiKey.Length - 6);
     }
 
+    /// <summary>
+    /// Создает экземпляр класса <c>YandexWeatherClient</c>
+    /// </summary>
+    /// <param name="apiKeys">Массив ключей доступа к API Яндекс Погоды</param>
+    /// <param name="logger">Интерфейс для записи информации в журнал событий (опциональный параметр)</param>
     public YandexWeatherClient(string[] apiKeys, ILogger? logger = null)
     {
         this.apiKeys = apiKeys.Distinct().ToArray();
@@ -31,17 +42,34 @@ public class YandexWeatherClient : IDisposable
         logger?.LogInformation($"Created Yandex Weather Client. Keys count: {apiKeys.Length}");
     }
 
+    /// <summary>
+    /// Создает экземпляр класса <c>YandexWeatherClient</c> 
+    /// </summary>
+    /// <param name="apiKey">Ключ доступа к API Яндекс Погоды</param>
+    /// <param name="logger">Интерфейс для записи информации в журнал событий (опциональный параметр)</param>
     public YandexWeatherClient(string apiKey, ILogger? logger = null) : this([apiKey], logger)
     {
     }
 
-
+    /// <summary>
+    /// Выполняет определенные приложением задачи, связанные с освобождением, разгружением
+    /// или сбросом неуправляемых ресурсов.
+    /// </summary>
     public void Dispose()
     {
         logger?.LogInformation("Dispose weather client");
         yandexWeatherHttp.Dispose();
     }
 
+    /// <summary>
+    /// Получает данные о погоде в заданном месте Земли
+    /// </summary>
+    /// <param name="lat">Широта</param>
+    /// <param name="lon">Долгота</param>
+    /// <exception cref="NoValidAPIKeysException">
+    /// Исключение произойдет, если нет действительных ключей доступа к API (например, на всех переданных ключах
+    /// превышен лимит запросов)
+    /// </exception>
     public async Task<ForecastResponse> GetForecast(float lat, float lon)
     {
         var slat = JsonSerializer.Serialize(lat);
@@ -107,6 +135,6 @@ public class YandexWeatherClient : IDisposable
             }
         }
 
-        throw new NoValidAPIKeysException();
+        throw new NoValidApiKeysException();
     }
 }
