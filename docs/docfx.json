@@ -4,13 +4,13 @@
     {
       "src": [
         {
-          "src": "ThinkingHome.Weather.Api",
+          "src": "../",
           "files": [
-            "ThinkingHome.Weather.Api.csproj"
+            "ThinkingHome.Weather.Api/ThinkingHome.Weather.Api.csproj"
           ]
         }
       ],
-      "dest": "_api",
+      "dest": "api",
       "namespaceLayout": "nested",
       "enumSortOrder": "declaringOrder",
       "disableGitFeatures": true,

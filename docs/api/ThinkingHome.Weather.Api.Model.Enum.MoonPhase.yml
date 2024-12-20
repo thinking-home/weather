@@ -1,0 +1,413 @@
+### YamlMime:ManagedReference
+items:
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  id: MoonPhase
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  children:
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.FullMoon
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon1of4
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon2of4
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon3of4
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.LastQuarter
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon5of8
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon6of8
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon7of8
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.NewMoon
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon1of4
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon2of4
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon3of4
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.FirstQuarter
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon5of8
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon6of8
+  - ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon7of8
+  langs:
+  - csharp
+  - vb
+  name: MoonPhase
+  nameWithType: MoonPhase
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  type: Enum
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Фаза луны
+  remarks: Для фаз луны указано направление изменения (возрастания/убывания) и процент, насколько изменение уже выполнено.
+  example: []
+  syntax:
+    content: public enum MoonPhase
+    content.vb: Public Enum MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.FullMoon
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.FullMoon
+  id: FullMoon
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: FullMoon
+  nameWithType: MoonPhase.FullMoon
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.FullMoon
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Полнолуние
+  example: []
+  syntax:
+    content: FullMoon = 0
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon1of4
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon1of4
+  id: WaningMoon1of4
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: WaningMoon1of4
+  nameWithType: MoonPhase.WaningMoon1of4
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon1of4
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Убывающая луна 12.5%
+  example: []
+  syntax:
+    content: WaningMoon1of4 = 1
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon2of4
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon2of4
+  id: WaningMoon2of4
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: WaningMoon2of4
+  nameWithType: MoonPhase.WaningMoon2of4
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon2of4
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Убывающая луна 25%
+  example: []
+  syntax:
+    content: WaningMoon2of4 = 2
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon3of4
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon3of4
+  id: WaningMoon3of4
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: WaningMoon3of4
+  nameWithType: MoonPhase.WaningMoon3of4
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon3of4
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Убывающая луна 37.5%
+  example: []
+  syntax:
+    content: WaningMoon3of4 = 3
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.LastQuarter
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.LastQuarter
+  id: LastQuarter
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: LastQuarter
+  nameWithType: MoonPhase.LastQuarter
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.LastQuarter
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Последняя четверть (убывающая луна 50%)
+  example: []
+  syntax:
+    content: LastQuarter = 4
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon5of8
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon5of8
+  id: WaningMoon5of8
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: WaningMoon5of8
+  nameWithType: MoonPhase.WaningMoon5of8
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon5of8
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Убывающая луна 62.5%
+  example: []
+  syntax:
+    content: WaningMoon5of8 = 5
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon6of8
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon6of8
+  id: WaningMoon6of8
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: WaningMoon6of8
+  nameWithType: MoonPhase.WaningMoon6of8
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon6of8
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Убывающая луна 75%
+  example: []
+  syntax:
+    content: WaningMoon6of8 = 6
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon7of8
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon7of8
+  id: WaningMoon7of8
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: WaningMoon7of8
+  nameWithType: MoonPhase.WaningMoon7of8
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.WaningMoon7of8
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Убывающая луна 87.5%
+  example: []
+  syntax:
+    content: WaningMoon7of8 = 7
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.NewMoon
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.NewMoon
+  id: NewMoon
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: NewMoon
+  nameWithType: MoonPhase.NewMoon
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.NewMoon
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Новолуние
+  example: []
+  syntax:
+    content: NewMoon = 8
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon1of4
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon1of4
+  id: GrowingMoon1of4
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: GrowingMoon1of4
+  nameWithType: MoonPhase.GrowingMoon1of4
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon1of4
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Растущая луна 12.5%
+  example: []
+  syntax:
+    content: GrowingMoon1of4 = 9
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon2of4
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon2of4
+  id: GrowingMoon2of4
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: GrowingMoon2of4
+  nameWithType: MoonPhase.GrowingMoon2of4
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon2of4
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Растущая луна 25%
+  example: []
+  syntax:
+    content: GrowingMoon2of4 = 10
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon3of4
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon3of4
+  id: GrowingMoon3of4
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: GrowingMoon3of4
+  nameWithType: MoonPhase.GrowingMoon3of4
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon3of4
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Растущая луна 37.5%
+  example: []
+  syntax:
+    content: GrowingMoon3of4 = 11
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.FirstQuarter
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.FirstQuarter
+  id: FirstQuarter
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: FirstQuarter
+  nameWithType: MoonPhase.FirstQuarter
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.FirstQuarter
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Первая четверть (растущая луна 50%)
+  example: []
+  syntax:
+    content: FirstQuarter = 12
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon5of8
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon5of8
+  id: GrowingMoon5of8
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: GrowingMoon5of8
+  nameWithType: MoonPhase.GrowingMoon5of8
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon5of8
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Растущая луна 62.5%
+  example: []
+  syntax:
+    content: GrowingMoon5of8 = 13
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon6of8
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon6of8
+  id: GrowingMoon6of8
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: GrowingMoon6of8
+  nameWithType: MoonPhase.GrowingMoon6of8
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon6of8
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Растущая луна 75%
+  example: []
+  syntax:
+    content: GrowingMoon6of8 = 14
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon7of8
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon7of8
+  id: GrowingMoon7of8
+  parent: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  langs:
+  - csharp
+  - vb
+  name: GrowingMoon7of8
+  nameWithType: MoonPhase.GrowingMoon7of8
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.GrowingMoon7of8
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Растущая луна 87.5%
+  example: []
+  syntax:
+    content: GrowingMoon7of8 = 15
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+references:
+- uid: ThinkingHome.Weather.Api.Model.Enum
+  commentId: N:ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.html
+  name: ThinkingHome.Weather.Api.Model.Enum
+  nameWithType: ThinkingHome.Weather.Api.Model.Enum
+  fullName: ThinkingHome.Weather.Api.Model.Enum
+  spec.csharp:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+  spec.vb:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+- uid: ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.MoonPhase
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.MoonPhase.html
+  name: MoonPhase
+  nameWithType: MoonPhase
+  fullName: ThinkingHome.Weather.Api.Model.Enum.MoonPhase

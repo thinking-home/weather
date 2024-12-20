@@ -1,0 +1,1039 @@
+### YamlMime:ManagedReference
+items:
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  commentId: T:ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  id: DayPartWeatherData
+  parent: ThinkingHome.Weather.Api.Model
+  children:
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.Cloudness
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.Condition
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.Daytime
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.FeelsLike
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.Humidity
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.Icon
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.Polar
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecPeriod
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecStrength
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecType
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.Sourse
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempAverage
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMax
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMin
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.UvIndex
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindAngle
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindDirection
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindGust
+  - ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindSpeed
+  langs:
+  - csharp
+  - vb
+  name: DayPartWeatherData
+  nameWithType: DayPartWeatherData
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  type: Class
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  syntax:
+    content: public class DayPartWeatherData
+    content.vb: Public Class DayPartWeatherData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Daytime
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Daytime
+  id: Daytime
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: Daytime
+  nameWithType: DayPartWeatherData.Daytime
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Daytime
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Время суток
+  example: []
+  syntax:
+    content: public Daytime Daytime { get; set; }
+    parameters: []
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.Daytime
+    content.vb: Public Property Daytime As Daytime
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Daytime*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Sourse
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Sourse
+  id: Sourse
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: Sourse
+  nameWithType: DayPartWeatherData.Sourse
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Sourse
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Часы, которые входят в период
+  example: []
+  syntax:
+    content: public int[] Sourse { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: Public Property Sourse As Integer()
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Sourse*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Cloudness
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Cloudness
+  id: Cloudness
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: Cloudness
+  nameWithType: DayPartWeatherData.Cloudness
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Cloudness
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Облачность
+  example: []
+  syntax:
+    content: public Cloudness Cloudness { get; set; }
+    parameters: []
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.Cloudness
+    content.vb: Public Property Cloudness As Cloudness
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Cloudness*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Condition
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Condition
+  id: Condition
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: Condition
+  nameWithType: DayPartWeatherData.Condition
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Condition
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Описание погодных условий
+  example: []
+  syntax:
+    content: public Condition Condition { get; set; }
+    parameters: []
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.Condition
+    content.vb: Public Property Condition As Condition
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Condition*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Humidity
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Humidity
+  id: Humidity
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: Humidity
+  nameWithType: DayPartWeatherData.Humidity
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Humidity
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Влажность воздуха (в процентах)
+  example: []
+  syntax:
+    content: public int Humidity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Humidity As Integer
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Humidity*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Icon
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Icon
+  id: Icon
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: Icon
+  nameWithType: DayPartWeatherData.Icon
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Icon
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: >-
+    Код иконки погодных условий с учетом времени суток. Иконка доступна по адресу
+
+    <pre><code class="lang-csharp">https://yastatic.net/weather/i/icons/funky/dark/&lt;значение-из-поля-icon&gt;.svg</code></pre><a href="https://yandex.ru/dev/weather/doc/ru/concepts/icons">
+
+    Список доступных иконок</a>
+  example: []
+  syntax:
+    content: public string Icon { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Icon As String
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Icon*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Polar
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Polar
+  id: Polar
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: Polar
+  nameWithType: DayPartWeatherData.Polar
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Polar
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: >-
+    Признак того, что время суток, указанное в поле <code>Daytime</code>,
+
+    является полярным
+  example: []
+  syntax:
+    content: public bool Polar { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Polar As Boolean
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Polar*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecPeriod
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecPeriod
+  id: PrecPeriod
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: PrecPeriod
+  nameWithType: DayPartWeatherData.PrecPeriod
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecPeriod
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Прогнозируемый период осадков (в минутах)
+  example: []
+  syntax:
+    content: public int PrecPeriod { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PrecPeriod As Integer
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecPeriod*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecStrength
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecStrength
+  id: PrecStrength
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: PrecStrength
+  nameWithType: DayPartWeatherData.PrecStrength
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecStrength
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Сила осадков
+  example: []
+  syntax:
+    content: public PrecStrength PrecStrength { get; set; }
+    parameters: []
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.PrecStrength
+    content.vb: Public Property PrecStrength As PrecStrength
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecStrength*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecType
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecType
+  id: PrecType
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: PrecType
+  nameWithType: DayPartWeatherData.PrecType
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecType
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Тип осадков
+  example: []
+  syntax:
+    content: public PrecType PrecType { get; set; }
+    parameters: []
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.PrecType
+    content.vb: Public Property PrecType As PrecType
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecType*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempAverage
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempAverage
+  id: TempAverage
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: TempAverage
+  nameWithType: DayPartWeatherData.TempAverage
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempAverage
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Средняя температура для времени суток (°C)
+  example: []
+  syntax:
+    content: public int TempAverage { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TempAverage As Integer
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempAverage*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMax
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMax
+  id: TempMax
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: TempMax
+  nameWithType: DayPartWeatherData.TempMax
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMax
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Максимальная температура для времени суток (°C)
+  example: []
+  syntax:
+    content: public int TempMax { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TempMax As Integer
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMax*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMin
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMin
+  id: TempMin
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: TempMin
+  nameWithType: DayPartWeatherData.TempMin
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMin
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Минимальная температура для времени суток (°C)
+  example: []
+  syntax:
+    content: public int TempMin { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TempMin As Integer
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMin*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.FeelsLike
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.FeelsLike
+  id: FeelsLike
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: FeelsLike
+  nameWithType: DayPartWeatherData.FeelsLike
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.FeelsLike
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Ощущаемая температура (°C)
+  example: []
+  syntax:
+    content: public int FeelsLike { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property FeelsLike As Integer
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.FeelsLike*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.UvIndex
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.UvIndex
+  id: UvIndex
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: UvIndex
+  nameWithType: DayPartWeatherData.UvIndex
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.UvIndex
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Ультрафиолетовый индекс
+  example: []
+  syntax:
+    content: public int UvIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property UvIndex As Integer
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.UvIndex*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindAngle
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindAngle
+  id: WindAngle
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: WindAngle
+  nameWithType: DayPartWeatherData.WindAngle
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindAngle
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Направление ветра (в градусах)
+  example: []
+  syntax:
+    content: public float WindAngle { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property WindAngle As Single
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindAngle*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindDirection
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindDirection
+  id: WindDirection
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: WindDirection
+  nameWithType: DayPartWeatherData.WindDirection
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindDirection
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Направление ветра
+  example: []
+  syntax:
+    content: public WindDirection WindDirection { get; set; }
+    parameters: []
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+    content.vb: Public Property WindDirection As WindDirection
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindDirection*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindGust
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindGust
+  id: WindGust
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: WindGust
+  nameWithType: DayPartWeatherData.WindGust
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindGust
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Скорость порывов ветра (в м/с)
+  example: []
+  syntax:
+    content: public float WindGust { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property WindGust As Single
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindGust*
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindSpeed
+  commentId: P:ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindSpeed
+  id: WindSpeed
+  parent: ThinkingHome.Weather.Api.Model.DayPartWeatherData
+  langs:
+  - csharp
+  - vb
+  name: WindSpeed
+  nameWithType: DayPartWeatherData.WindSpeed
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindSpeed
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Скорость ветра (в м/с)
+  example: []
+  syntax:
+    content: public float WindSpeed { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property WindSpeed As Single
+  overload: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindSpeed*
+references:
+- uid: ThinkingHome.Weather.Api.Model
+  commentId: N:ThinkingHome.Weather.Api.Model
+  href: ThinkingHome.html
+  name: ThinkingHome.Weather.Api.Model
+  nameWithType: ThinkingHome.Weather.Api.Model
+  fullName: ThinkingHome.Weather.Api.Model
+  spec.csharp:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  spec.vb:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Daytime*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Daytime
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_Daytime
+  name: Daytime
+  nameWithType: DayPartWeatherData.Daytime
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Daytime
+- uid: ThinkingHome.Weather.Api.Model.Enum.Daytime
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.Daytime
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.Daytime.html
+  name: Daytime
+  nameWithType: Daytime
+  fullName: ThinkingHome.Weather.Api.Model.Enum.Daytime
+- uid: ThinkingHome.Weather.Api.Model.Enum
+  commentId: N:ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.html
+  name: ThinkingHome.Weather.Api.Model.Enum
+  nameWithType: ThinkingHome.Weather.Api.Model.Enum
+  fullName: ThinkingHome.Weather.Api.Model.Enum
+  spec.csharp:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+  spec.vb:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Sourse*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Sourse
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_Sourse
+  name: Sourse
+  nameWithType: DayPartWeatherData.Sourse
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Sourse
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Cloudness*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Cloudness
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_Cloudness
+  name: Cloudness
+  nameWithType: DayPartWeatherData.Cloudness
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Cloudness
+- uid: ThinkingHome.Weather.Api.Model.Enum.Cloudness
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.Cloudness
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.Cloudness.html
+  name: Cloudness
+  nameWithType: Cloudness
+  fullName: ThinkingHome.Weather.Api.Model.Enum.Cloudness
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Condition*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Condition
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_Condition
+  name: Condition
+  nameWithType: DayPartWeatherData.Condition
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Condition
+- uid: ThinkingHome.Weather.Api.Model.Enum.Condition
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.Condition
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.Condition.html
+  name: Condition
+  nameWithType: Condition
+  fullName: ThinkingHome.Weather.Api.Model.Enum.Condition
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Humidity*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Humidity
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_Humidity
+  name: Humidity
+  nameWithType: DayPartWeatherData.Humidity
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Humidity
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Icon*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Icon
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_Icon
+  name: Icon
+  nameWithType: DayPartWeatherData.Icon
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Icon
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Polar*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.Polar
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_Polar
+  name: Polar
+  nameWithType: DayPartWeatherData.Polar
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.Polar
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecPeriod*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecPeriod
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_PrecPeriod
+  name: PrecPeriod
+  nameWithType: DayPartWeatherData.PrecPeriod
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecPeriod
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecStrength*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecStrength
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_PrecStrength
+  name: PrecStrength
+  nameWithType: DayPartWeatherData.PrecStrength
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecStrength
+- uid: ThinkingHome.Weather.Api.Model.Enum.PrecStrength
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.PrecStrength
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.PrecStrength.html
+  name: PrecStrength
+  nameWithType: PrecStrength
+  fullName: ThinkingHome.Weather.Api.Model.Enum.PrecStrength
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecType*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecType
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_PrecType
+  name: PrecType
+  nameWithType: DayPartWeatherData.PrecType
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.PrecType
+- uid: ThinkingHome.Weather.Api.Model.Enum.PrecType
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.PrecType
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.PrecType.html
+  name: PrecType
+  nameWithType: PrecType
+  fullName: ThinkingHome.Weather.Api.Model.Enum.PrecType
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempAverage*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempAverage
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_TempAverage
+  name: TempAverage
+  nameWithType: DayPartWeatherData.TempAverage
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempAverage
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMax*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMax
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_TempMax
+  name: TempMax
+  nameWithType: DayPartWeatherData.TempMax
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMax
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMin*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMin
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_TempMin
+  name: TempMin
+  nameWithType: DayPartWeatherData.TempMin
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.TempMin
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.FeelsLike*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.FeelsLike
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_FeelsLike
+  name: FeelsLike
+  nameWithType: DayPartWeatherData.FeelsLike
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.FeelsLike
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.UvIndex*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.UvIndex
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_UvIndex
+  name: UvIndex
+  nameWithType: DayPartWeatherData.UvIndex
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.UvIndex
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindAngle*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindAngle
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_WindAngle
+  name: WindAngle
+  nameWithType: DayPartWeatherData.WindAngle
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindAngle
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindDirection*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindDirection
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_WindDirection
+  name: WindDirection
+  nameWithType: DayPartWeatherData.WindDirection
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.WindDirection.html
+  name: WindDirection
+  nameWithType: WindDirection
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindGust*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindGust
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_WindGust
+  name: WindGust
+  nameWithType: DayPartWeatherData.WindGust
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindGust
+- uid: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindSpeed*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindSpeed
+  href: ThinkingHome.Weather.Api.Model.DayPartWeatherData.html#ThinkingHome_Weather_Api_Model_DayPartWeatherData_WindSpeed
+  name: WindSpeed
+  nameWithType: DayPartWeatherData.WindSpeed
+  fullName: ThinkingHome.Weather.Api.Model.DayPartWeatherData.WindSpeed

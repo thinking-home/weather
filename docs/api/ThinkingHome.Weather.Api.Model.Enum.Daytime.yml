@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: ThinkingHome.Weather.Api.Model.Enum.Daytime
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.Daytime
+  id: Daytime
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  children:
+  - ThinkingHome.Weather.Api.Model.Enum.Daytime.Day
+  - ThinkingHome.Weather.Api.Model.Enum.Daytime.Night
+  langs:
+  - csharp
+  - vb
+  name: Daytime
+  nameWithType: Daytime
+  fullName: ThinkingHome.Weather.Api.Model.Enum.Daytime
+  type: Enum
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Светлое или темное время суток
+  example: []
+  syntax:
+    content: public enum Daytime
+    content.vb: Public Enum Daytime
+- uid: ThinkingHome.Weather.Api.Model.Enum.Daytime.Day
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.Daytime.Day
+  id: Day
+  parent: ThinkingHome.Weather.Api.Model.Enum.Daytime
+  langs:
+  - csharp
+  - vb
+  name: Day
+  nameWithType: Daytime.Day
+  fullName: ThinkingHome.Weather.Api.Model.Enum.Daytime.Day
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: День
+  example: []
+  syntax:
+    content: Day = 0
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.Daytime
+- uid: ThinkingHome.Weather.Api.Model.Enum.Daytime.Night
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.Daytime.Night
+  id: Night
+  parent: ThinkingHome.Weather.Api.Model.Enum.Daytime
+  langs:
+  - csharp
+  - vb
+  name: Night
+  nameWithType: Daytime.Night
+  fullName: ThinkingHome.Weather.Api.Model.Enum.Daytime.Night
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Ночь
+  example: []
+  syntax:
+    content: Night = 1
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.Daytime
+references:
+- uid: ThinkingHome.Weather.Api.Model.Enum
+  commentId: N:ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.html
+  name: ThinkingHome.Weather.Api.Model.Enum
+  nameWithType: ThinkingHome.Weather.Api.Model.Enum
+  fullName: ThinkingHome.Weather.Api.Model.Enum
+  spec.csharp:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+  spec.vb:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+- uid: ThinkingHome.Weather.Api.Model.Enum.Daytime
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.Daytime
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.Daytime.html
+  name: Daytime
+  nameWithType: Daytime
+  fullName: ThinkingHome.Weather.Api.Model.Enum.Daytime
