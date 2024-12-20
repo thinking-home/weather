@@ -22,7 +22,7 @@ internal class Program
             builder.AddConsole();
             builder.SetMinimumLevel(LogLevel.Information); // уровень логирования
         });
-        ILogger logger = factory.CreateLogger("Program");
+        var logger = factory.CreateLogger<YandexWeatherClient>();
         using var weatherClient = new YandexWeatherClient(apiKeys, logger);
         try
         {

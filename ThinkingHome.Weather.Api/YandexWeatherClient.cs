@@ -22,7 +22,7 @@ public class YandexWeatherClient : IDisposable
     };
 
 
-    private readonly ILogger? logger;
+    private readonly ILogger<YandexWeatherClient>? logger;
     private readonly string[] apiKeys;
 
     private string MaskApiKey(string apiKey)
@@ -35,7 +35,7 @@ public class YandexWeatherClient : IDisposable
     /// </summary>
     /// <param name="apiKeys">Массив ключей доступа к API Яндекс Погоды</param>
     /// <param name="logger">Интерфейс для записи информации в журнал событий (опциональный параметр)</param>
-    public YandexWeatherClient(string[] apiKeys, ILogger? logger = null)
+    public YandexWeatherClient(string[] apiKeys, ILogger<YandexWeatherClient>? logger = null)
     {
         this.apiKeys = apiKeys.Distinct().ToArray();
         this.logger = logger;
@@ -47,7 +47,8 @@ public class YandexWeatherClient : IDisposable
     /// </summary>
     /// <param name="apiKey">Ключ доступа к API Яндекс Погоды</param>
     /// <param name="logger">Интерфейс для записи информации в журнал событий (опциональный параметр)</param>
-    public YandexWeatherClient(string apiKey, ILogger? logger = null) : this([apiKey], logger)
+    public YandexWeatherClient(string apiKey, ILogger<YandexWeatherClient>? logger = null)
+        : this([apiKey], logger)
     {
     }
 
