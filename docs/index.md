@@ -1,4 +1,6 @@
-# Thinking-Home.Weather.API
+# ThinkingHome.Weather.Api
+[![NuGet Pre Release](https://img.shields.io/nuget/vpre/ThinkingHome.Weather.Api.svg)](https://www.nuget.org/packages/ThinkingHome.Weather.Api)
+[![license](https://img.shields.io/github/license/thinking-home/weather.svg)](https://github.com/thinking-home/weather/blob/master/LICENSE)
 
 `Thinking-Home.Weather.API` — библиотека, которая предоставляет API для получения
 данных о погоде из сервиса
