@@ -67,7 +67,7 @@ public class YandexWeatherClient : IDisposable
     /// </summary>
     /// <param name="lat">Широта</param>
     /// <param name="lon">Долгота</param>
-    /// <exception cref="NoValidAPIKeysException">
+    /// <exception cref="NoValidApiKeysException">
     /// Исключение произойдет, если нет действительных ключей доступа к API (например, на всех переданных ключах
     /// превышен лимит запросов)
     /// </exception>

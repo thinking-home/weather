@@ -4,6 +4,9 @@ using ThinkingHome.Weather.Api.Model.Enum;
 
 namespace ThinkingHome.Weather.Api.Model;
 
+/// <summary>
+/// Прогноз погоды по времени суток (утро/день/вечер/ночь)
+/// </summary>
 public class DayPartWeatherData
 {
     /// <summary>

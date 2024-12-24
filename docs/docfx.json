@@ -44,7 +44,9 @@
       "_appName": "Thinking-Home-Weather",
       "_appTitle": "Thinking-Home-Weather",
       "_enableSearch": true,
-      "pdf": false
+      "pdf": false,
+      "_disableTocFilter": true,
+      "_disableContribution": true
     }
   }
 }

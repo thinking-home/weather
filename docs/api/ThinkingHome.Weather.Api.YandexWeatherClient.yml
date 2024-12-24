@@ -157,6 +157,13 @@ items:
       type: System.Threading.Tasks.Task{ThinkingHome.Weather.Api.Model.ForecastResponse}
     content.vb: Public Function GetForecast(lat As Single, lon As Single) As Task(Of ForecastResponse)
   overload: ThinkingHome.Weather.Api.YandexWeatherClient.GetForecast*
+  exceptions:
+  - type: ThinkingHome.Weather.Api.NoValidApiKeysException
+    commentId: T:ThinkingHome.Weather.Api.NoValidApiKeysException
+    description: >-
+      Исключение произойдет, если нет действительных ключей доступа к API (например, на всех переданных ключах
+
+      превышен лимит запросов)
   nameWithType.vb: YandexWeatherClient.GetForecast(Single, Single)
   fullName.vb: ThinkingHome.Weather.Api.YandexWeatherClient.GetForecast(Single, Single)
   name.vb: GetForecast(Single, Single)
@@ -605,6 +612,12 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
   - name: (
   - name: )
+- uid: ThinkingHome.Weather.Api.NoValidApiKeysException
+  commentId: T:ThinkingHome.Weather.Api.NoValidApiKeysException
+  href: ThinkingHome.Weather.Api.NoValidApiKeysException.html
+  name: NoValidApiKeysException
+  nameWithType: NoValidApiKeysException
+  fullName: ThinkingHome.Weather.Api.NoValidApiKeysException
 - uid: ThinkingHome.Weather.Api.YandexWeatherClient.GetForecast*
   commentId: Overload:ThinkingHome.Weather.Api.YandexWeatherClient.GetForecast
   href: ThinkingHome.Weather.Api.YandexWeatherClient.html#ThinkingHome_Weather_Api_YandexWeatherClient_GetForecast_System_Single_System_Single_

@@ -34,6 +34,8 @@ items:
   assemblies:
   - ThinkingHome.Weather.Api
   namespace: ThinkingHome.Weather.Api.Model
+  summary: Прогноз погоды по времени суток (утро/день/вечер/ночь)
+  example: []
   syntax:
     content: public class DayPartWeatherData
     content.vb: Public Class DayPartWeatherData
