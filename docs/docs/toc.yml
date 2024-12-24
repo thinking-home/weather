@@ -1,4 +1,6 @@
-- name: Introduction
-  href: introduction.md
-- name: Getting Started
-  href: getting-started.md
+- name: Начало работы
+  href: ../index.md
+- name: Логирование
+  href: logging.md
+- name: Использование с несколькими ключами доступа
+  href: reserved-keys.md
