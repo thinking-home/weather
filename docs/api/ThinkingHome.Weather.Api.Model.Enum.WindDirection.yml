@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  id: WindDirection
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  children:
+  - ThinkingHome.Weather.Api.Model.Enum.WindDirection.NW
+  - ThinkingHome.Weather.Api.Model.Enum.WindDirection.N
+  - ThinkingHome.Weather.Api.Model.Enum.WindDirection.NE
+  - ThinkingHome.Weather.Api.Model.Enum.WindDirection.E
+  - ThinkingHome.Weather.Api.Model.Enum.WindDirection.SE
+  - ThinkingHome.Weather.Api.Model.Enum.WindDirection.S
+  - ThinkingHome.Weather.Api.Model.Enum.WindDirection.SW
+  - ThinkingHome.Weather.Api.Model.Enum.WindDirection.W
+  - ThinkingHome.Weather.Api.Model.Enum.WindDirection.Calm
+  langs:
+  - csharp
+  - vb
+  name: WindDirection
+  nameWithType: WindDirection
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  type: Enum
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Направление ветра
+  example: []
+  syntax:
+    content: public enum WindDirection
+    content.vb: Public Enum WindDirection
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection.NW
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.WindDirection.NW
+  id: NW
+  parent: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  langs:
+  - csharp
+  - vb
+  name: NW
+  nameWithType: WindDirection.NW
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection.NW
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Северо-западный ветер
+  example: []
+  syntax:
+    content: NW = 0
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection.N
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.WindDirection.N
+  id: N
+  parent: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  langs:
+  - csharp
+  - vb
+  name: N
+  nameWithType: WindDirection.N
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection.N
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Северный ветер
+  example: []
+  syntax:
+    content: N = 1
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection.NE
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.WindDirection.NE
+  id: NE
+  parent: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  langs:
+  - csharp
+  - vb
+  name: NE
+  nameWithType: WindDirection.NE
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection.NE
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Северо-восточный ветер
+  example: []
+  syntax:
+    content: NE = 2
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection.E
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.WindDirection.E
+  id: E
+  parent: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  langs:
+  - csharp
+  - vb
+  name: E
+  nameWithType: WindDirection.E
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection.E
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Восточный ветер
+  example: []
+  syntax:
+    content: E = 3
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection.SE
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.WindDirection.SE
+  id: SE
+  parent: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  langs:
+  - csharp
+  - vb
+  name: SE
+  nameWithType: WindDirection.SE
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection.SE
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Юго-восточный ветер
+  example: []
+  syntax:
+    content: SE = 4
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection.S
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.WindDirection.S
+  id: S
+  parent: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  langs:
+  - csharp
+  - vb
+  name: S
+  nameWithType: WindDirection.S
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection.S
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Южный ветер
+  example: []
+  syntax:
+    content: S = 5
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection.SW
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.WindDirection.SW
+  id: SW
+  parent: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  langs:
+  - csharp
+  - vb
+  name: SW
+  nameWithType: WindDirection.SW
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection.SW
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Юго-западный ветер
+  example: []
+  syntax:
+    content: SW = 6
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection.W
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.WindDirection.W
+  id: W
+  parent: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  langs:
+  - csharp
+  - vb
+  name: W
+  nameWithType: WindDirection.W
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection.W
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Западный ветер
+  example: []
+  syntax:
+    content: W = 7
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection.Calm
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.WindDirection.Calm
+  id: Calm
+  parent: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  langs:
+  - csharp
+  - vb
+  name: Calm
+  nameWithType: WindDirection.Calm
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection.Calm
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Штиль
+  example: []
+  syntax:
+    content: Calm = 8
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+references:
+- uid: ThinkingHome.Weather.Api.Model.Enum
+  commentId: N:ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.html
+  name: ThinkingHome.Weather.Api.Model.Enum
+  nameWithType: ThinkingHome.Weather.Api.Model.Enum
+  fullName: ThinkingHome.Weather.Api.Model.Enum
+  spec.csharp:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+  spec.vb:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.WindDirection.html
+  name: WindDirection
+  nameWithType: WindDirection
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection

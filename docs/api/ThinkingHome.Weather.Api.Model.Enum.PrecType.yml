@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: ThinkingHome.Weather.Api.Model.Enum.PrecType
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.PrecType
+  id: PrecType
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  children:
+  - ThinkingHome.Weather.Api.Model.Enum.PrecType.Clear
+  - ThinkingHome.Weather.Api.Model.Enum.PrecType.Rain
+  - ThinkingHome.Weather.Api.Model.Enum.PrecType.RainWithSnow
+  - ThinkingHome.Weather.Api.Model.Enum.PrecType.Snow
+  - ThinkingHome.Weather.Api.Model.Enum.PrecType.Hail
+  langs:
+  - csharp
+  - vb
+  name: PrecType
+  nameWithType: PrecType
+  fullName: ThinkingHome.Weather.Api.Model.Enum.PrecType
+  type: Enum
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Тип осадков
+  example: []
+  syntax:
+    content: public enum PrecType
+    content.vb: Public Enum PrecType
+- uid: ThinkingHome.Weather.Api.Model.Enum.PrecType.Clear
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.PrecType.Clear
+  id: Clear
+  parent: ThinkingHome.Weather.Api.Model.Enum.PrecType
+  langs:
+  - csharp
+  - vb
+  name: Clear
+  nameWithType: PrecType.Clear
+  fullName: ThinkingHome.Weather.Api.Model.Enum.PrecType.Clear
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Нет осадков
+  example: []
+  syntax:
+    content: Clear = 0
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.PrecType
+- uid: ThinkingHome.Weather.Api.Model.Enum.PrecType.Rain
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.PrecType.Rain
+  id: Rain
+  parent: ThinkingHome.Weather.Api.Model.Enum.PrecType
+  langs:
+  - csharp
+  - vb
+  name: Rain
+  nameWithType: PrecType.Rain
+  fullName: ThinkingHome.Weather.Api.Model.Enum.PrecType.Rain
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Дождь
+  example: []
+  syntax:
+    content: Rain = 1
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.PrecType
+- uid: ThinkingHome.Weather.Api.Model.Enum.PrecType.RainWithSnow
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.PrecType.RainWithSnow
+  id: RainWithSnow
+  parent: ThinkingHome.Weather.Api.Model.Enum.PrecType
+  langs:
+  - csharp
+  - vb
+  name: RainWithSnow
+  nameWithType: PrecType.RainWithSnow
+  fullName: ThinkingHome.Weather.Api.Model.Enum.PrecType.RainWithSnow
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Дождь со снегом
+  example: []
+  syntax:
+    content: RainWithSnow = 2
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.PrecType
+- uid: ThinkingHome.Weather.Api.Model.Enum.PrecType.Snow
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.PrecType.Snow
+  id: Snow
+  parent: ThinkingHome.Weather.Api.Model.Enum.PrecType
+  langs:
+  - csharp
+  - vb
+  name: Snow
+  nameWithType: PrecType.Snow
+  fullName: ThinkingHome.Weather.Api.Model.Enum.PrecType.Snow
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Снег
+  example: []
+  syntax:
+    content: Snow = 3
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.PrecType
+- uid: ThinkingHome.Weather.Api.Model.Enum.PrecType.Hail
+  commentId: F:ThinkingHome.Weather.Api.Model.Enum.PrecType.Hail
+  id: Hail
+  parent: ThinkingHome.Weather.Api.Model.Enum.PrecType
+  langs:
+  - csharp
+  - vb
+  name: Hail
+  nameWithType: PrecType.Hail
+  fullName: ThinkingHome.Weather.Api.Model.Enum.PrecType.Hail
+  type: Field
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model.Enum
+  summary: Град
+  example: []
+  syntax:
+    content: Hail = 4
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.PrecType
+references:
+- uid: ThinkingHome.Weather.Api.Model.Enum
+  commentId: N:ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.html
+  name: ThinkingHome.Weather.Api.Model.Enum
+  nameWithType: ThinkingHome.Weather.Api.Model.Enum
+  fullName: ThinkingHome.Weather.Api.Model.Enum
+  spec.csharp:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+  spec.vb:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+- uid: ThinkingHome.Weather.Api.Model.Enum.PrecType
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.PrecType
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.PrecType.html
+  name: PrecType
+  nameWithType: PrecType
+  fullName: ThinkingHome.Weather.Api.Model.Enum.PrecType

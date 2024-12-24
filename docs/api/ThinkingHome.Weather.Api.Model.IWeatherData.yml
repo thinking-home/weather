@@ -1,0 +1,501 @@
+### YamlMime:ManagedReference
+items:
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData
+  commentId: T:ThinkingHome.Weather.Api.Model.IWeatherData
+  id: IWeatherData
+  parent: ThinkingHome.Weather.Api.Model
+  children:
+  - ThinkingHome.Weather.Api.Model.IWeatherData.Cloudness
+  - ThinkingHome.Weather.Api.Model.IWeatherData.Condition
+  - ThinkingHome.Weather.Api.Model.IWeatherData.Humidity
+  - ThinkingHome.Weather.Api.Model.IWeatherData.PrecStrength
+  - ThinkingHome.Weather.Api.Model.IWeatherData.PrecType
+  - ThinkingHome.Weather.Api.Model.IWeatherData.Temperature
+  - ThinkingHome.Weather.Api.Model.IWeatherData.UvIndex
+  - ThinkingHome.Weather.Api.Model.IWeatherData.WindAngle
+  - ThinkingHome.Weather.Api.Model.IWeatherData.WindDirection
+  - ThinkingHome.Weather.Api.Model.IWeatherData.WindGust
+  - ThinkingHome.Weather.Api.Model.IWeatherData.WindSpeed
+  langs:
+  - csharp
+  - vb
+  name: IWeatherData
+  nameWithType: IWeatherData
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData
+  type: Interface
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Интерфейс, представляющий собой информацию о погодных условиях в некоторый период времени
+  example: []
+  syntax:
+    content: public interface IWeatherData
+    content.vb: Public Interface IWeatherData
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.Temperature
+  commentId: P:ThinkingHome.Weather.Api.Model.IWeatherData.Temperature
+  id: Temperature
+  parent: ThinkingHome.Weather.Api.Model.IWeatherData
+  langs:
+  - csharp
+  - vb
+  name: Temperature
+  nameWithType: IWeatherData.Temperature
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.Temperature
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Температура (в C°)
+  example: []
+  syntax:
+    content: int Temperature { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property Temperature As Integer
+  overload: ThinkingHome.Weather.Api.Model.IWeatherData.Temperature*
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.Cloudness
+  commentId: P:ThinkingHome.Weather.Api.Model.IWeatherData.Cloudness
+  id: Cloudness
+  parent: ThinkingHome.Weather.Api.Model.IWeatherData
+  langs:
+  - csharp
+  - vb
+  name: Cloudness
+  nameWithType: IWeatherData.Cloudness
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.Cloudness
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Облачность
+  example: []
+  syntax:
+    content: Cloudness Cloudness { get; set; }
+    parameters: []
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.Cloudness
+    content.vb: Property Cloudness As Cloudness
+  overload: ThinkingHome.Weather.Api.Model.IWeatherData.Cloudness*
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.Humidity
+  commentId: P:ThinkingHome.Weather.Api.Model.IWeatherData.Humidity
+  id: Humidity
+  parent: ThinkingHome.Weather.Api.Model.IWeatherData
+  langs:
+  - csharp
+  - vb
+  name: Humidity
+  nameWithType: IWeatherData.Humidity
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.Humidity
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Влажность воздуха (в процентах)
+  example: []
+  syntax:
+    content: int Humidity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property Humidity As Integer
+  overload: ThinkingHome.Weather.Api.Model.IWeatherData.Humidity*
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.Condition
+  commentId: P:ThinkingHome.Weather.Api.Model.IWeatherData.Condition
+  id: Condition
+  parent: ThinkingHome.Weather.Api.Model.IWeatherData
+  langs:
+  - csharp
+  - vb
+  name: Condition
+  nameWithType: IWeatherData.Condition
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.Condition
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Описание погодных условий
+  example: []
+  syntax:
+    content: Condition Condition { get; set; }
+    parameters: []
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.Condition
+    content.vb: Property Condition As Condition
+  overload: ThinkingHome.Weather.Api.Model.IWeatherData.Condition*
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.PrecStrength
+  commentId: P:ThinkingHome.Weather.Api.Model.IWeatherData.PrecStrength
+  id: PrecStrength
+  parent: ThinkingHome.Weather.Api.Model.IWeatherData
+  langs:
+  - csharp
+  - vb
+  name: PrecStrength
+  nameWithType: IWeatherData.PrecStrength
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.PrecStrength
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Сила осадков
+  example: []
+  syntax:
+    content: PrecStrength PrecStrength { get; set; }
+    parameters: []
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.PrecStrength
+    content.vb: Property PrecStrength As PrecStrength
+  overload: ThinkingHome.Weather.Api.Model.IWeatherData.PrecStrength*
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.PrecType
+  commentId: P:ThinkingHome.Weather.Api.Model.IWeatherData.PrecType
+  id: PrecType
+  parent: ThinkingHome.Weather.Api.Model.IWeatherData
+  langs:
+  - csharp
+  - vb
+  name: PrecType
+  nameWithType: IWeatherData.PrecType
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.PrecType
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Тип осадков
+  example: []
+  syntax:
+    content: PrecType PrecType { get; set; }
+    parameters: []
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.PrecType
+    content.vb: Property PrecType As PrecType
+  overload: ThinkingHome.Weather.Api.Model.IWeatherData.PrecType*
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.UvIndex
+  commentId: P:ThinkingHome.Weather.Api.Model.IWeatherData.UvIndex
+  id: UvIndex
+  parent: ThinkingHome.Weather.Api.Model.IWeatherData
+  langs:
+  - csharp
+  - vb
+  name: UvIndex
+  nameWithType: IWeatherData.UvIndex
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.UvIndex
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Ультрафиолетовый индекс
+  example: []
+  syntax:
+    content: int UvIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property UvIndex As Integer
+  overload: ThinkingHome.Weather.Api.Model.IWeatherData.UvIndex*
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.WindAngle
+  commentId: P:ThinkingHome.Weather.Api.Model.IWeatherData.WindAngle
+  id: WindAngle
+  parent: ThinkingHome.Weather.Api.Model.IWeatherData
+  langs:
+  - csharp
+  - vb
+  name: WindAngle
+  nameWithType: IWeatherData.WindAngle
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.WindAngle
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Направление ветра (в градусах)
+  example: []
+  syntax:
+    content: float WindAngle { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Property WindAngle As Single
+  overload: ThinkingHome.Weather.Api.Model.IWeatherData.WindAngle*
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.WindDirection
+  commentId: P:ThinkingHome.Weather.Api.Model.IWeatherData.WindDirection
+  id: WindDirection
+  parent: ThinkingHome.Weather.Api.Model.IWeatherData
+  langs:
+  - csharp
+  - vb
+  name: WindDirection
+  nameWithType: IWeatherData.WindDirection
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.WindDirection
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Направление ветра
+  example: []
+  syntax:
+    content: WindDirection WindDirection { get; set; }
+    parameters: []
+    return:
+      type: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+    content.vb: Property WindDirection As WindDirection
+  overload: ThinkingHome.Weather.Api.Model.IWeatherData.WindDirection*
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.WindGust
+  commentId: P:ThinkingHome.Weather.Api.Model.IWeatherData.WindGust
+  id: WindGust
+  parent: ThinkingHome.Weather.Api.Model.IWeatherData
+  langs:
+  - csharp
+  - vb
+  name: WindGust
+  nameWithType: IWeatherData.WindGust
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.WindGust
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Скорость порывов ветра (в м/с)
+  example: []
+  syntax:
+    content: float WindGust { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Property WindGust As Single
+  overload: ThinkingHome.Weather.Api.Model.IWeatherData.WindGust*
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.WindSpeed
+  commentId: P:ThinkingHome.Weather.Api.Model.IWeatherData.WindSpeed
+  id: WindSpeed
+  parent: ThinkingHome.Weather.Api.Model.IWeatherData
+  langs:
+  - csharp
+  - vb
+  name: WindSpeed
+  nameWithType: IWeatherData.WindSpeed
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.WindSpeed
+  type: Property
+  assemblies:
+  - ThinkingHome.Weather.Api
+  namespace: ThinkingHome.Weather.Api.Model
+  summary: Скорость ветра (в м/с)
+  example: []
+  syntax:
+    content: float WindSpeed { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Property WindSpeed As Single
+  overload: ThinkingHome.Weather.Api.Model.IWeatherData.WindSpeed*
+references:
+- uid: ThinkingHome.Weather.Api.Model
+  commentId: N:ThinkingHome.Weather.Api.Model
+  href: ThinkingHome.html
+  name: ThinkingHome.Weather.Api.Model
+  nameWithType: ThinkingHome.Weather.Api.Model
+  fullName: ThinkingHome.Weather.Api.Model
+  spec.csharp:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  spec.vb:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.Temperature*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.IWeatherData.Temperature
+  href: ThinkingHome.Weather.Api.Model.IWeatherData.html#ThinkingHome_Weather_Api_Model_IWeatherData_Temperature
+  name: Temperature
+  nameWithType: IWeatherData.Temperature
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.Temperature
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.Cloudness*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.IWeatherData.Cloudness
+  href: ThinkingHome.Weather.Api.Model.IWeatherData.html#ThinkingHome_Weather_Api_Model_IWeatherData_Cloudness
+  name: Cloudness
+  nameWithType: IWeatherData.Cloudness
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.Cloudness
+- uid: ThinkingHome.Weather.Api.Model.Enum.Cloudness
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.Cloudness
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.Cloudness.html
+  name: Cloudness
+  nameWithType: Cloudness
+  fullName: ThinkingHome.Weather.Api.Model.Enum.Cloudness
+- uid: ThinkingHome.Weather.Api.Model.Enum
+  commentId: N:ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.html
+  name: ThinkingHome.Weather.Api.Model.Enum
+  nameWithType: ThinkingHome.Weather.Api.Model.Enum
+  fullName: ThinkingHome.Weather.Api.Model.Enum
+  spec.csharp:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+  spec.vb:
+  - uid: ThinkingHome
+    name: ThinkingHome
+    href: ThinkingHome.html
+  - name: .
+  - uid: ThinkingHome.Weather
+    name: Weather
+    href: ThinkingHome.Weather.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api
+    name: Api
+    href: ThinkingHome.Weather.Api.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model
+    name: Model
+    href: ThinkingHome.Weather.Api.Model.html
+  - name: .
+  - uid: ThinkingHome.Weather.Api.Model.Enum
+    name: Enum
+    href: ThinkingHome.Weather.Api.Model.Enum.html
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.Humidity*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.IWeatherData.Humidity
+  href: ThinkingHome.Weather.Api.Model.IWeatherData.html#ThinkingHome_Weather_Api_Model_IWeatherData_Humidity
+  name: Humidity
+  nameWithType: IWeatherData.Humidity
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.Humidity
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.Condition*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.IWeatherData.Condition
+  href: ThinkingHome.Weather.Api.Model.IWeatherData.html#ThinkingHome_Weather_Api_Model_IWeatherData_Condition
+  name: Condition
+  nameWithType: IWeatherData.Condition
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.Condition
+- uid: ThinkingHome.Weather.Api.Model.Enum.Condition
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.Condition
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.Condition.html
+  name: Condition
+  nameWithType: Condition
+  fullName: ThinkingHome.Weather.Api.Model.Enum.Condition
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.PrecStrength*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.IWeatherData.PrecStrength
+  href: ThinkingHome.Weather.Api.Model.IWeatherData.html#ThinkingHome_Weather_Api_Model_IWeatherData_PrecStrength
+  name: PrecStrength
+  nameWithType: IWeatherData.PrecStrength
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.PrecStrength
+- uid: ThinkingHome.Weather.Api.Model.Enum.PrecStrength
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.PrecStrength
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.PrecStrength.html
+  name: PrecStrength
+  nameWithType: PrecStrength
+  fullName: ThinkingHome.Weather.Api.Model.Enum.PrecStrength
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.PrecType*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.IWeatherData.PrecType
+  href: ThinkingHome.Weather.Api.Model.IWeatherData.html#ThinkingHome_Weather_Api_Model_IWeatherData_PrecType
+  name: PrecType
+  nameWithType: IWeatherData.PrecType
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.PrecType
+- uid: ThinkingHome.Weather.Api.Model.Enum.PrecType
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.PrecType
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.PrecType.html
+  name: PrecType
+  nameWithType: PrecType
+  fullName: ThinkingHome.Weather.Api.Model.Enum.PrecType
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.UvIndex*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.IWeatherData.UvIndex
+  href: ThinkingHome.Weather.Api.Model.IWeatherData.html#ThinkingHome_Weather_Api_Model_IWeatherData_UvIndex
+  name: UvIndex
+  nameWithType: IWeatherData.UvIndex
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.UvIndex
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.WindAngle*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.IWeatherData.WindAngle
+  href: ThinkingHome.Weather.Api.Model.IWeatherData.html#ThinkingHome_Weather_Api_Model_IWeatherData_WindAngle
+  name: WindAngle
+  nameWithType: IWeatherData.WindAngle
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.WindAngle
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.WindDirection*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.IWeatherData.WindDirection
+  href: ThinkingHome.Weather.Api.Model.IWeatherData.html#ThinkingHome_Weather_Api_Model_IWeatherData_WindDirection
+  name: WindDirection
+  nameWithType: IWeatherData.WindDirection
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  commentId: T:ThinkingHome.Weather.Api.Model.Enum.WindDirection
+  parent: ThinkingHome.Weather.Api.Model.Enum
+  href: ThinkingHome.Weather.Api.Model.Enum.WindDirection.html
+  name: WindDirection
+  nameWithType: WindDirection
+  fullName: ThinkingHome.Weather.Api.Model.Enum.WindDirection
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.WindGust*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.IWeatherData.WindGust
+  href: ThinkingHome.Weather.Api.Model.IWeatherData.html#ThinkingHome_Weather_Api_Model_IWeatherData_WindGust
+  name: WindGust
+  nameWithType: IWeatherData.WindGust
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.WindGust
+- uid: ThinkingHome.Weather.Api.Model.IWeatherData.WindSpeed*
+  commentId: Overload:ThinkingHome.Weather.Api.Model.IWeatherData.WindSpeed
+  href: ThinkingHome.Weather.Api.Model.IWeatherData.html#ThinkingHome_Weather_Api_Model_IWeatherData_WindSpeed
+  name: WindSpeed
+  nameWithType: IWeatherData.WindSpeed
+  fullName: ThinkingHome.Weather.Api.Model.IWeatherData.WindSpeed
