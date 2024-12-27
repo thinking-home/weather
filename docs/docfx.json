@@ -41,12 +41,14 @@
       "modern"
     ],
     "globalMetadata": {
-      "_appName": "Thinking-Home-Weather",
-      "_appTitle": "Thinking-Home-Weather",
+      "_appName": "ThinkingHome.Weather.Api",
+      "_appTitle": "ThinkingHome.Weather.Api",
       "_enableSearch": true,
       "pdf": false,
       "_disableTocFilter": true,
-      "_disableContribution": true
+      "_disableContribution": true,
+      "_appLogoPath": "images/logo.svg",
+      "_appFaviconPath": "images/favicon.png"
     }
   }
 }
