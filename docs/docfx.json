@@ -14,7 +14,7 @@
       "namespaceLayout": "nested",
       "enumSortOrder": "declaringOrder",
       "disableGitFeatures": true,
-      "filter":"filterConfig.yml" 
+      "filter": "filterConfig.yml"
     }
   ],
   "build": {
