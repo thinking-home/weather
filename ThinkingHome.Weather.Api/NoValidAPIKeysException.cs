@@ -1,7 +1,16 @@
 namespace ThinkingHome.Weather.Api;
 
-public class NoValidAPIKeysException : Exception
+/// <summary>
+/// Представляет ошибку, которая происходит, если нет действительных ключей доступа к API
+/// (например, на всех переданных ключах превышен лимит запросов)
+/// </summary>
+public class NoValidApiKeysException : Exception
 {
-    public NoValidAPIKeysException()
-        : base("No valid keys to make request to Yandex Weather") { }
+    /// <summary>
+    /// Создает экземпляр исключения
+    /// </summary>
+    public NoValidApiKeysException()
+        : base("No valid keys to make request to Yandex Weather")
+    {
+    }
 }

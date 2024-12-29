@@ -6,3 +6,5 @@ riderModule.iml
 .vs
 .idea
 .DS_Store
+_site
+_api

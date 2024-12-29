@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../",
+          "files": [
+            "ThinkingHome.Weather.Api/ThinkingHome.Weather.Api.csproj"
+          ]
+        }
+      ],
+      "dest": "_api",
+      "namespaceLayout": "nested",
+      "enumSortOrder": "declaringOrder",
+      "disableGitFeatures": true,
+      "filter": "filterConfig.yml"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "ThinkingHome.Weather.Api",
+      "_appTitle": "ThinkingHome.Weather.Api",
+      "_enableSearch": true,
+      "pdf": false,
+      "_disableTocFilter": true,
+      "_disableContribution": true,
+      "_appLogoPath": "images/logo.svg",
+      "_appFaviconPath": "images/favicon.png"
+    }
+  }
+}

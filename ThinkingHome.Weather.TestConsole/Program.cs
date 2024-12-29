@@ -14,14 +14,15 @@ internal class Program
         var ttt = Response(lat, lon, apiKeys);
         ttt.Wait();
     }
+
     private static async Task Response(float lat, float lon, string[] apiKeys)
     {
         using ILoggerFactory factory = LoggerFactory.Create(builder =>
         {
             builder.AddConsole();
-            builder.SetMinimumLevel(LogLevel.Information);       // уровень логирования
+            builder.SetMinimumLevel(LogLevel.Information); // уровень логирования
         });
-        ILogger logger = factory.CreateLogger("Program");
+        var logger = factory.CreateLogger<YandexWeatherClient>();
         using var weatherClient = new YandexWeatherClient(apiKeys, logger);
         try
         {
@@ -29,7 +30,7 @@ internal class Program
             Console.WriteLine($"сейчас на улице {response.Fact.Temperature}°C");
             Console.WriteLine($"ощущается как {response.Fact.FeelsLike}°C");
         }
-        catch (NoValidAPIKeysException e)
+        catch (NoValidApiKeysException e)
         {
             Console.WriteLine("Закончились рабочие ключи");
         }
